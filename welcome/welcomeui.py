@@ -149,7 +149,7 @@ class WelcomeUi(QWidget):
         self.useKalamarButton.setFixedWidth(135)
         self.useKalamarButton.setCursor(Qt.PointingHandCursor)
         self.useKalamarButton.setText(self.tr("Start Installation"))
-        self.useKalamarButton.setIcon(QIcon.fromTheme("system-installer"))
+        self.useKalamarButton.setIcon(QIcon(":/images/calamares.svg"))
         self.useKalamarButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.useKalamarButton)
 
