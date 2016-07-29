@@ -8,7 +8,7 @@ class WelcomeUi(QWidget):
         super().__init__()
         self.setWindowTitle(self.tr("Welcome Pisi Linux"))
         self.setFixedSize(700, 475)
-        self.setWindowIcon(QIcon.fromTheme("pisi"))
+        self.setWindowIcon(QIcon(":/images/logo.png"))
         self.setLayout(QVBoxLayout())
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)
@@ -24,7 +24,7 @@ class WelcomeUi(QWidget):
         self.logoLabel = QLabel()
         self.logoLabel.setFixedSize(64, 64)
         self.logoLabel.setScaledContents(True)
-        self.logoLabel.setPixmap(QIcon.fromTheme("pisi").pixmap(self.logoLabel.size()))
+        self.logoLabel.setPixmap(QIcon(":/images/pisi-white.svg").pixmap(self.logoLabel.size()))
         self.headerWidget.layout().addWidget(self.logoLabel)
 
         self.pisiLogoLabel = QLabel()
@@ -50,10 +50,10 @@ class WelcomeUi(QWidget):
         self.layout().addWidget(self.contentWidget)
 
         self.descriptionLabel = QLabel()
-        self.descriptionLabel.setText(self.tr("Pisi Linux'a hoşgeldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!\n\n"\
-                                              "Pisi Linux geliştiricileri olarak Pisi Linux'u kullanmaktan zevk almanızı umuyoruz. "\
-                                              "Aşağıdaki bağlantılar Pisi Linux kullanmanıza yardımcı olacaktır. Deneyimlerinizi, "\
-                                              "önerilerinizi ve karşılaştığınız hataları bize bildirmekten çekinmeyiniz."))
+        self.descriptionLabel.setText(self.tr("Welcome to Pisi Linux! Thank you for joining our community!\n\n"\
+                                              "As Pisi Linux developers, we hope you enjoy using Pisi Linux. "\
+                                              "The following links will guide you while using Pisi Linux. Please do not "\
+                                              "hesitate to inform about your experiences, suggestions and errors you have encountered."))
         self.descriptionLabel.setWordWrap(True)
         font = self.descriptionLabel.font()
         font.setFamily("DejaVu Sans")
@@ -72,13 +72,13 @@ class WelcomeUi(QWidget):
         font.setBold(True)
         self.docLabel.setFont(font)
         self.docLabel.setAlignment(Qt.AlignHCenter)
-        self.docLabel.setText(self.tr("Belgeler"))
+        self.docLabel.setText(self.tr("Documents"))
         vlayoutI.addWidget(self.docLabel)
 
         self.installDocButton = QPushButton()
         self.installDocButton.setFixedWidth(135)
         self.installDocButton.setCursor(Qt.PointingHandCursor)
-        self.installDocButton.setText(self.tr("Kurulum Belgesi"))
+        self.installDocButton.setText(self.tr("Installation Guide"))
         self.installDocButton.setIcon(QIcon.fromTheme("view-readermode"))
         self.installDocButton.setIconSize(QSize(32,32))
         vlayoutI.addWidget(self.installDocButton)
@@ -86,7 +86,7 @@ class WelcomeUi(QWidget):
         self.releaseButton = QPushButton()
         self.releaseButton.setFixedWidth(135)
         self.releaseButton.setCursor(Qt.PointingHandCursor)
-        self.releaseButton.setText(self.tr("Sürüm Notları"))
+        self.releaseButton.setText(self.tr("Release Notes"))
         self.releaseButton.setIcon(QIcon.fromTheme("dialog-information"))
         self.releaseButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.releaseButton)
@@ -107,7 +107,7 @@ class WelcomeUi(QWidget):
         font.setBold(True)
         self.supportLabel.setFont(font)
         self.supportLabel.setAlignment(Qt.AlignHCenter)
-        self.supportLabel.setText(self.tr("Destek"))
+        self.supportLabel.setText(self.tr("Support"))
         vlayoutII.addWidget(self.supportLabel)
 
         self.forumButton = QPushButton()
@@ -121,7 +121,7 @@ class WelcomeUi(QWidget):
         self.chatButton = QPushButton()
         self.chatButton.setFixedWidth(135)
         self.chatButton.setCursor(Qt.PointingHandCursor)
-        self.chatButton.setText(self.tr("Sohbet Odaları"))
+        self.chatButton.setText(self.tr("Chat Rooms"))
         self.chatButton.setIcon(QIcon.fromTheme("internet-chat"))
         self.chatButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.chatButton)
@@ -137,13 +137,13 @@ class WelcomeUi(QWidget):
         font.setBold(True)
         self.installLabel.setFont(font)
         self.installLabel.setAlignment(Qt.AlignHCenter)
-        self.installLabel.setText(self.tr("Kurulum"))
+        self.installLabel.setText(self.tr("Installation"))
         vlayoutIII.addWidget(self.installLabel)
 
         self.useKalamarButton = QPushButton()
         self.useKalamarButton.setFixedWidth(135)
         self.useKalamarButton.setCursor(Qt.PointingHandCursor)
-        self.useKalamarButton.setText(self.tr("Kurulumu Başlat"))
+        self.useKalamarButton.setText(self.tr("Start Installation"))
         self.useKalamarButton.setIcon(QIcon.fromTheme("system-installer"))
         self.useKalamarButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.useKalamarButton)
@@ -151,7 +151,7 @@ class WelcomeUi(QWidget):
         self.getInvolvedButton = QPushButton()
         self.getInvolvedButton.setFixedWidth(135)
         self.getInvolvedButton.setCursor(Qt.PointingHandCursor)
-        self.getInvolvedButton.setText(self.tr("Bize Katılın"))
+        self.getInvolvedButton.setText(self.tr("Join Us"))
         self.getInvolvedButton.setIcon(QIcon.fromTheme("network-connect"))
         self.getInvolvedButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.getInvolvedButton)
@@ -159,7 +159,7 @@ class WelcomeUi(QWidget):
         self.donateButton = QPushButton()
         self.donateButton.setFixedWidth(150)
         self.donateButton.setCursor(Qt.PointingHandCursor)
-        self.donateButton.setText(self.tr("Bağış Yapın"))
+        self.donateButton.setText(self.tr("Donate"))
         self.donateButton.setIcon(QIcon.fromTheme("help-donate"))
         self.donateButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.donateButton)
@@ -173,7 +173,7 @@ class WelcomeUi(QWidget):
         font.setPointSize(12)
         font.setBold(True)
         self.noteLabel.setFont(font)
-        self.noteLabel.setText(self.tr("Not: Kullanıcı adı ve şifresi \"live\"'dır."))
+        self.noteLabel.setText(self.tr("Note: The username and password is \"live\"."))
         self.noteLabel.setAlignment(Qt.AlignHCenter)
         self.contentWidget.layout().addWidget(self.noteLabel)
 
@@ -190,6 +190,7 @@ class WelcomeUi(QWidget):
         self.facebookButton.setIconSize(QSize(36, 36))
         self.facebookButton.setIcon(QIcon(":/images/facebook.png"))
         self.facebookButton.setCursor(Qt.PointingHandCursor)
+        self.facebookButton.setToolTip(self.tr("Facebook Page"))
         self.footerWidget.layout().addWidget(self.facebookButton)
 
         self.googleButton = QPushButton()
@@ -197,6 +198,7 @@ class WelcomeUi(QWidget):
         self.googleButton.setIconSize(QSize(36, 36))
         self.googleButton.setIcon(QIcon(":/images/google.png"))
         self.googleButton.setCursor(Qt.PointingHandCursor)
+        self.googleButton.setToolTip(self.tr("Google+ Page"))
         self.footerWidget.layout().addWidget(self.googleButton)
 
         self.twitterButton = QPushButton()
@@ -204,6 +206,7 @@ class WelcomeUi(QWidget):
         self.twitterButton.setIconSize(QSize(36, 36))
         self.twitterButton.setIcon(QIcon(":/images/twitter.png"))
         self.twitterButton.setCursor(Qt.PointingHandCursor)
+        self.twitterButton.setToolTip(self.tr("Twitter Page"))
         self.footerWidget.layout().addWidget(self.twitterButton)
 
         self.githubButton = QPushButton()
@@ -211,6 +214,7 @@ class WelcomeUi(QWidget):
         self.githubButton.setIconSize(QSize(36, 36))
         self.githubButton.setIcon(QIcon(":/images/git.svg"))
         self.githubButton.setCursor(Qt.PointingHandCursor)
+        self.githubButton.setToolTip(self.tr("GitHub Page"))
         self.footerWidget.layout().addWidget(self.githubButton)
 
         self.footerWidget.layout().addItem(QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
@@ -220,7 +224,7 @@ class WelcomeUi(QWidget):
         font = self.openCheckBox.font()
         font.setBold(True)
         self.openCheckBox.setFont(font)
-        self.openCheckBox.setText(self.tr("Sistem açılışında göster"))
+        self.openCheckBox.setText(self.tr("Show on startup"))
         self.openCheckBox.setStyleSheet("color: white;")
         self.footerWidget.layout().addWidget(self.openCheckBox)
 
@@ -244,9 +248,9 @@ class WelcomeUi(QWidget):
             self.useKalamarButton.clicked.connect(self.calamaresExec)
 
         else:
-            self.useKalamarButton.setText(self.tr("Kaptan'ı Başlat"))
+            self.useKalamarButton.setText(self.tr("Start Kaptan"))
             self.useKalamarButton.clicked.connect(self.kaptanExec)
-            self.installLabel.setText(self.tr("Proje"))
+            self.installLabel.setText(self.tr("Project"))
             self.noteLabel.hide()
             self.contentWidget.layout().addItem(QSpacerItem(20, 50, QSizePolicy.Expanding, QSizePolicy.Minimum))
 

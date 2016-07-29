@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import QTranslator, QLocale
 from welcome import WelcomeUi, resource
