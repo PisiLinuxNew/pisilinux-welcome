@@ -64,6 +64,7 @@ class WelcomeUi(QWidget):
         font.setFamily("DejaVu Sans")
         font.setPointSize(10)
         self.descriptionLabel.setFont(font)
+        self.descriptionLabel.setStyleSheet("color: black;")
         self.contentWidget.layout().addWidget(self.descriptionLabel)
 
         self.mainLayout = QHBoxLayout()
