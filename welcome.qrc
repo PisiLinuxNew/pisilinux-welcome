@@ -6,5 +6,7 @@
         <file>images/twitter.png</file>
         <file>images/google.png</file>
         <file>images/git.svg</file>
+        <file>images/logo.png</file>
+        <file>images/pisi-white.svg</file>
     </qresource>
 </RCC>
