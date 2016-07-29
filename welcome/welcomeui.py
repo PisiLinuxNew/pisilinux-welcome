@@ -1,6 +1,7 @@
-from PyQt5.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QPushButton, QLabel, QSpacerItem, QSizePolicy, QCheckBox
+from PyQt5.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QPushButton, QLabel, QSpacerItem, QSizePolicy, QCheckBox, QDesktopWidget
 from PyQt5.QtGui import QIcon, QDesktopServices, QPixmap
 from PyQt5.QtCore import Qt, QSysInfo, QSize, QUrl, QProcess
+import os, shutil
 
 
 class WelcomeUi(QWidget):
@@ -13,6 +14,10 @@ class WelcomeUi(QWidget):
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)
         self.setStyleSheet("QPushButton {border: none; text-align:left;}")
+
+        x = (QDesktopWidget().width() - self.width()) // 2
+        y = (QDesktopWidget().height() - self.height()) // 2
+        self.move(x, y)
 
         #######################
         self.headerWidget = QWidget()
@@ -242,6 +247,7 @@ class WelcomeUi(QWidget):
         self.chatButton.clicked.connect(self.chatPages)
         self.getInvolvedButton.clicked.connect(self.involvedPage)
         self.donateButton.clicked.connect(self.donatePage)
+        self.openCheckBox.clicked.connect(self.openState)
 
     def setSystem(self, type):
         if type == "live":
@@ -267,7 +273,7 @@ class WelcomeUi(QWidget):
         QDesktopServices.openUrl(QUrl("https://github.com/pisilinux"))
 
     def installedDoc(self):
-        pass
+        QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
 
     def releaseNote(self):
         pass
@@ -293,3 +299,19 @@ class WelcomeUi(QWidget):
 
     def donatePage(self):
         QDesktopServices.openUrl(QUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
+
+    def openState(self):
+        if self.openCheckBox.isChecked():
+            try:
+                shutil.copy("/usr/share/welcome/data/pisilinux-welcome.desktop",
+                            os.path.join(os.environ["HOME"], ".config", "autostart"))
+
+            except FileNotFoundError as err:
+                print(err)
+
+        else:
+            try:
+                os.remove(os.path.join(os.environ["HOME"], ".config", "autostart", "pisilinux-welcome.desktop"))
+
+            except OSError as err:
+                print(err)
