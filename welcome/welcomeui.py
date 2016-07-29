@@ -9,7 +9,7 @@ class WelcomeUi(QWidget):
         super().__init__()
         self.setWindowTitle(self.tr("Welcome Pisi Linux"))
         self.setFixedSize(700, 475)
-        self.setWindowIcon(QIcon(":/images/logo.png"))
+        self.setWindowIcon(QIcon(":/images/pisilinux-welcome.png"))
         self.setLayout(QVBoxLayout())
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)
@@ -84,7 +84,7 @@ class WelcomeUi(QWidget):
         self.installDocButton.setFixedWidth(135)
         self.installDocButton.setCursor(Qt.PointingHandCursor)
         self.installDocButton.setText(self.tr("Installation Guide"))
-        self.installDocButton.setIcon(QIcon.fromTheme("view-readermode"))
+        self.installDocButton.setIcon(QIcon(":/images/guide.svg"))
         self.installDocButton.setIconSize(QSize(32,32))
         vlayoutI.addWidget(self.installDocButton)
 
@@ -92,7 +92,7 @@ class WelcomeUi(QWidget):
         self.releaseButton.setFixedWidth(135)
         self.releaseButton.setCursor(Qt.PointingHandCursor)
         self.releaseButton.setText(self.tr("Release Notes"))
-        self.releaseButton.setIcon(QIcon.fromTheme("dialog-information"))
+        self.releaseButton.setIcon(QIcon(":/images/info.svg"))
         self.releaseButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.releaseButton)
 
@@ -100,7 +100,7 @@ class WelcomeUi(QWidget):
         self.wikiButton.setFixedWidth(135)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
         self.wikiButton.setText(self.tr("Pisi Linux Wiki"))
-        self.wikiButton.setIcon(QIcon.fromTheme("address-book-new"))
+        self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
         self.wikiButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.wikiButton)
 
@@ -120,14 +120,14 @@ class WelcomeUi(QWidget):
         self.forumButton.setCursor(Qt.PointingHandCursor)
         self.forumButton.setText(self.tr("Forum"))
         self.forumButton.setIconSize(QSize(32, 32))
-        self.forumButton.setIcon(QIcon.fromTheme("internet"))
+        self.forumButton.setIcon(QIcon(":/images/forum.svg"))
         vlayoutII.addWidget(self.forumButton)
 
         self.chatButton = QPushButton()
         self.chatButton.setFixedWidth(135)
         self.chatButton.setCursor(Qt.PointingHandCursor)
         self.chatButton.setText(self.tr("Chat Rooms"))
-        self.chatButton.setIcon(QIcon.fromTheme("internet-chat"))
+        self.chatButton.setIcon(QIcon(":/images/chat.svg"))
         self.chatButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.chatButton)
 
@@ -157,7 +157,7 @@ class WelcomeUi(QWidget):
         self.getInvolvedButton.setFixedWidth(135)
         self.getInvolvedButton.setCursor(Qt.PointingHandCursor)
         self.getInvolvedButton.setText(self.tr("Join Us"))
-        self.getInvolvedButton.setIcon(QIcon.fromTheme("network-connect"))
+        self.getInvolvedButton.setIcon(QIcon(":/images/joinus.svg"))
         self.getInvolvedButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.getInvolvedButton)
 
@@ -165,7 +165,7 @@ class WelcomeUi(QWidget):
         self.donateButton.setFixedWidth(150)
         self.donateButton.setCursor(Qt.PointingHandCursor)
         self.donateButton.setText(self.tr("Donate"))
-        self.donateButton.setIcon(QIcon.fromTheme("help-donate"))
+        self.donateButton.setIcon(QIcon(":/images/donate.svg"))
         self.donateButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.donateButton)
 
@@ -225,7 +225,8 @@ class WelcomeUi(QWidget):
         self.footerWidget.layout().addItem(QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
 
         self.openCheckBox = QCheckBox()
-        self.openCheckBox.setChecked(True)
+        self.openCheckBox.setChecked(os.path.exists(os.path.join(os.environ["HOME"],
+                                                                 ".config", "autostart", "pisilinux-welcome.desktop")))
         font = self.openCheckBox.font()
         font.setBold(True)
         self.openCheckBox.setFont(font)
@@ -255,6 +256,7 @@ class WelcomeUi(QWidget):
 
         else:
             self.useKalamarButton.setText(self.tr("Start Kaptan"))
+            self.useKalamarButton.setIcon(QIcon(":/images/kaptan.svg"))
             self.useKalamarButton.clicked.connect(self.kaptanExec)
             self.installLabel.setText(self.tr("Project"))
             self.noteLabel.hide()

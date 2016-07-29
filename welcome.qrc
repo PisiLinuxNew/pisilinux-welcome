@@ -6,7 +6,15 @@
         <file>images/twitter.png</file>
         <file>images/google.png</file>
         <file>images/git.svg</file>
-        <file>images/logo.png</file>
+        <file>images/pisilinux-welcome.png</file>
         <file>images/pisi-white.svg</file>
+        <file>images/wiki.svg</file>
+        <file>images/guide.svg</file>
+        <file>images/chat.svg</file>
+        <file>images/forum.svg</file>
+        <file>images/donate.svg</file>
+        <file>images/joinus.svg</file>
+        <file>images/info.svg</file>
+        <file>images/kaptan.svg</file>
     </qresource>
 </RCC>
