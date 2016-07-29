@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Type=Application
 Name=Pisi Linux Welcome
+Name[tr]=Pisi Linux'a Hoşgeldiniz
 GenericName=Pisi Linux Welcome
 GenericName[tr]=Pisi Linux'a Hoşgeldiniz
 Exec=pisilinux-welcome
