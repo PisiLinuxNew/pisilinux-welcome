@@ -9,7 +9,7 @@ class WelcomeUi(QWidget):
         super().__init__()
         self.setWindowTitle(self.tr("Welcome Pisi Linux"))
         self.setFixedSize(700, 475)
-        self.setWindowIcon(QIcon(":/images/pisilinux-welcome.png"))
+        self.setWindowIcon(QIcon(":/images/pisilinux-welcome.svg"))
         self.setLayout(QVBoxLayout())
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)

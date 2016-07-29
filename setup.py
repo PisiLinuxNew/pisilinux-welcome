@@ -13,7 +13,7 @@ system('pyrcc5 welcome.qrc -o welcome/resource.py')
 
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
-         ('/usr/share/icons/hicolor/192x192/apps', ['images/pisilinux-welcome.png']),
+         ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
          ('/usr/share/welcome/languages', langs),
          ('/usr/share/welcome/data', ["data/pisilinux-2-0-kurulum-belgesi.pdf", "data/pisilinux-welcome.desktop"])]
 
