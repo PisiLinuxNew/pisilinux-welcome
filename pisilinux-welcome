@@ -18,7 +18,7 @@ def main():
     window = WelcomeUi()
     window.show()
 
-    if os.environ["HOME"] == "live":
+    if os.environ["HOME"].split("/")[-1] == "live":
         window.setSystem("live")
 
     else:
