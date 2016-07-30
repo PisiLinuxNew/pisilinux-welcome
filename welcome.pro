@@ -2,5 +2,5 @@
 
 SOURCES += welcome/welcomeui.py
 
-TRANSLATIONS += languages/tr_TR.ts languages/en_US.ts languages/de_DE.ts
+TRANSLATIONS += languages/tr_TR.ts languages/en_US.ts languages/de_DE.ts languages/fr_FR.ts
 

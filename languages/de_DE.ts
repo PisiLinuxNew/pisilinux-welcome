@@ -4,111 +4,113 @@
 <context>
     <name>WelcomeUi</name>
     <message>
-        <location filename="../welcome/welcomeui.py" line="9"/>
+        <location filename="../welcome/welcomeui.py" line="10"/>
         <source>Welcome Pisi Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Willkommen Pisi Linux</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="53"/>
+        <location filename="../welcome/welcomeui.py" line="58"/>
         <source>Welcome to Pisi Linux! Thank you for joining our community!
 
 As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="75"/>
-        <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Willkommen bei Pisi Linux! Danke für Ihr Interesse an unserer Community
+
+Wir als Pisi Linux Entwickler hoffen Sie genießen es Pisi Linux zu benutzen. Die nachfolgenden Links führen Sie auf Pisi Linux Seiten und geben Ihnen eine kleine Hilfestellung. Bitte zögern Sie nicht uns Ihre Erfahrungen oder Fehler die Sie entdeckt haben mitzuteilen. Auch für Anregungen von Ihnen sind wir sehr dankbar.</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="81"/>
+        <source>Documents</source>
+        <translation>Dokumente</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="87"/>
         <source>Installation Guide</source>
-        <translation type="unfinished"></translation>
+        <translation>Installations Anleitung</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="89"/>
+        <location filename="../welcome/welcomeui.py" line="95"/>
         <source>Release Notes</source>
-        <translation type="unfinished"></translation>
+        <translation>Versionshinweise</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="97"/>
+        <location filename="../welcome/welcomeui.py" line="103"/>
         <source>Pisi Linux Wiki</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="110"/>
-        <source>Support</source>
-        <translation type="unfinished"></translation>
+        <translation>Pisi Linux Wiki</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="116"/>
+        <source>Support</source>
+        <translation>Unterstützung</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="122"/>
         <source>Forum</source>
-        <translation type="unfinished"></translation>
+        <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="124"/>
+        <location filename="../welcome/welcomeui.py" line="130"/>
         <source>Chat Rooms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="140"/>
-        <source>Installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Chat Räume</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="146"/>
+        <source>Installation</source>
+        <translation>Installation</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="152"/>
         <source>Start Installation</source>
-        <translation type="unfinished"></translation>
+        <translation>Starte Installation</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="154"/>
+        <location filename="../welcome/welcomeui.py" line="160"/>
         <source>Join Us</source>
-        <translation type="unfinished"></translation>
+        <translation>Treffen Sie uns</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="162"/>
+        <location filename="../welcome/welcomeui.py" line="168"/>
         <source>Donate</source>
-        <translation type="unfinished"></translation>
+        <translation>Spenden</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="176"/>
+        <location filename="../welcome/welcomeui.py" line="182"/>
         <source>Note: The username and password is &quot;live&quot;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte beachten Sie: Der Benutzername und das Passwort sind &quot;live&quot;.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="193"/>
+        <location filename="../welcome/welcomeui.py" line="199"/>
         <source>Facebook Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Facebook Seite</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="201"/>
+        <location filename="../welcome/welcomeui.py" line="207"/>
         <source>Google+ Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Google+ Seite</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="209"/>
+        <location filename="../welcome/welcomeui.py" line="215"/>
         <source>Twitter Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Twitter Seite</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="217"/>
+        <location filename="../welcome/welcomeui.py" line="223"/>
         <source>GitHub Page</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub Seite</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="227"/>
+        <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Show on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Beim Start anzeigen</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="251"/>
+        <location filename="../welcome/welcomeui.py" line="259"/>
         <source>Start Kaptan</source>
-        <translation type="unfinished"></translation>
+        <translation>Starte Kaptan</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="253"/>
+        <location filename="../welcome/welcomeui.py" line="262"/>
         <source>Project</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekt</translation>
     </message>
 </context>
 </TS>

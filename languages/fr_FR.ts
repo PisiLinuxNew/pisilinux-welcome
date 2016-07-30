@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="tr_TR" sourcelanguage="en_US">
+<!DOCTYPE TS>
+<TS version="2.1" language="fr_FR" sourcelanguage="en_US">
 <context>
     <name>WelcomeUi</name>
     <message>
         <location filename="../welcome/welcomeui.py" line="10"/>
         <source>Welcome Pisi Linux</source>
-        <translation>Pisi Linux&apos;a Hoşgeldiniz</translation>
+        <translation>Bienvenue Pisi Linux</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="58"/>
         <source>Welcome to Pisi Linux! Thank you for joining our community!
 
 As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation>Pisi Linux&apos;a Hoşgeldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
+        <translation>Bienvenue sur Pisi Linux! Merci de vous joindre à notre communauté!
 
-Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi Linux kullanmanıza yardımcı olacaktır. Deneyimlerinizi, önerilerinizi ve karşılaştığınız hataları bize bildirmekten çekinmeyiniz.</translation>
+En tant que développeurs Pisi Linux, nous espérons que vous apprécierez Pisi Linux. Les liens suivants vous guideront tout en utilisant Pisi Linux. S&apos;il vous plaît ne pas hésiter à informer sur vos expériences, vos suggestions et les erreurs que vous avez rencontrés.</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="81"/>
         <source>Documents</source>
-        <translation>Belgeler</translation>
+        <translation>Documents</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="87"/>
         <source>Installation Guide</source>
-        <translation>Kurulum Belgesi</translation>
+        <translation>Guides d&apos;installation</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="95"/>
         <source>Release Notes</source>
-        <translation>Sürüm Notları</translation>
+        <translation>Notes de version</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="103"/>
@@ -39,7 +40,7 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
     <message>
         <location filename="../welcome/welcomeui.py" line="116"/>
         <source>Support</source>
-        <translation>Destek</translation>
+        <translation>Soutien</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="122"/>
@@ -49,67 +50,67 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
     <message>
         <location filename="../welcome/welcomeui.py" line="130"/>
         <source>Chat Rooms</source>
-        <translation>Sohbet Odaları</translation>
+        <translation>Salles de discussion</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="146"/>
         <source>Installation</source>
-        <translation>Kurulum</translation>
+        <translation>Installation</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="152"/>
         <source>Start Installation</source>
-        <translation>Kurulumu Başlat</translation>
+        <translation>Démarrer l&apos;installation</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="160"/>
         <source>Join Us</source>
-        <translation>Bize Katılın</translation>
+        <translation>Rejoignez-nous</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="168"/>
         <source>Donate</source>
-        <translation>Bağış Yapın</translation>
+        <translation>Faire un don</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="182"/>
         <source>Note: The username and password is &quot;live&quot;.</source>
-        <translation>Not: Kullanıcı adı ve şifresi &quot;live&quot;dır.</translation>
+        <translation>Remarque: Le nom d&apos;utilisateur et mot de passe est &quot;live&quot;.</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="199"/>
         <source>Facebook Page</source>
-        <translation>Facebook Sayfası</translation>
+        <translation>La page Facebook</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="207"/>
         <source>Google+ Page</source>
-        <translation>Google+ Sayfası</translation>
+        <translation>La page Google+</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="215"/>
         <source>Twitter Page</source>
-        <translation>Twitter Sayfası</translation>
+        <translation>La page Twitter</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="223"/>
         <source>GitHub Page</source>
-        <translation>GitHub Sayfası</translation>
+        <translation>La page GitHub</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Show on startup</source>
-        <translation>Sistem açılışında göster</translation>
+        <translation>Montrer au démarrage</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="259"/>
         <source>Start Kaptan</source>
-        <translation>Kaptan&apos;ı Başlat</translation>
+        <translation>Démarrer Kaptan</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="262"/>
         <source>Project</source>
-        <translation>Proje</translation>
+        <translation>Projet</translation>
     </message>
 </context>
 </TS>
