@@ -13,7 +13,7 @@ class WelcomeUi(QWidget):
         self.setLayout(QVBoxLayout())
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)
-        self.setStyleSheet("QPushButton {border: none; text-align:left;}")
+        self.setStyleSheet("QPushButton {border: none; text-align:left; color: black;} QLabel {color:black;}")
 
         x = (QDesktopWidget().width() - self.width()) // 2
         y = (QDesktopWidget().height() - self.height()) // 2
