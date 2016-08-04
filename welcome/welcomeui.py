@@ -200,7 +200,7 @@ class WelcomeUi(QWidget):
         font.setPointSize(12)
         font.setBold(True)
         self.noteLabel.setFont(font)
-        self.noteLabel.setText(self.tr("Note: The Password is \"live\"."))
+        self.noteLabel.setText(self.tr("Note: The password is \"live\"."))
         self.noteLabel.setAlignment(Qt.AlignHCenter)
         self.contentWidget.layout().addWidget(self.noteLabel)
 

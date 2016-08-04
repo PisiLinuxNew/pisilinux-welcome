@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="tr_TR" sourcelanguage="en_US">
+<!DOCTYPE TS>
+<TS version="2.1" language="tr_TR" sourcelanguage="en_US">
 <context>
     <name>WelcomeUi</name>
     <message>
-        <location filename="../welcome/welcomeui.py" line="10"/>
+        <location filename="../welcome/welcomeui.py" line="31"/>
         <source>Welcome Pisi Linux</source>
         <translation>Pisi Linux&apos;a Hoşgeldiniz</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="58"/>
+        <location filename="../welcome/welcomeui.py" line="79"/>
         <source>Welcome to Pisi Linux! Thank you for joining our community!
 
 As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
@@ -17,99 +18,109 @@ As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following link
 Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi Linux kullanmanıza yardımcı olacaktır. Deneyimlerinizi, önerilerinizi ve karşılaştığınız hataları bize bildirmekten çekinmeyiniz.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="81"/>
+        <location filename="../welcome/welcomeui.py" line="102"/>
         <source>Documents</source>
         <translation>Belgeler</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="87"/>
+        <location filename="../welcome/welcomeui.py" line="108"/>
         <source>Installation Guide</source>
         <translation>Kurulum Belgesi</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="95"/>
+        <location filename="../welcome/welcomeui.py" line="116"/>
         <source>Release Notes</source>
         <translation>Sürüm Notları</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="103"/>
+        <location filename="../welcome/welcomeui.py" line="124"/>
         <source>Pisi Linux Wiki</source>
         <translation>Pisi Linux Wiki</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="116"/>
+        <location filename="../welcome/welcomeui.py" line="137"/>
         <source>Support</source>
         <translation>Destek</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="122"/>
+        <location filename="../welcome/welcomeui.py" line="143"/>
         <source>Forum</source>
         <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="130"/>
+        <location filename="../welcome/welcomeui.py" line="151"/>
         <source>Chat Rooms</source>
         <translation>Sohbet Odaları</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="146"/>
+        <location filename="../welcome/welcomeui.py" line="167"/>
         <source>Installation</source>
         <translation>Kurulum</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="152"/>
+        <location filename="../welcome/welcomeui.py" line="173"/>
         <source>Start Installation</source>
         <translation>Kurulumu Başlat</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="160"/>
+        <location filename="../welcome/welcomeui.py" line="181"/>
         <source>Join Us</source>
         <translation>Bize Katılın</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="168"/>
+        <location filename="../welcome/welcomeui.py" line="189"/>
         <source>Donate</source>
         <translation>Bağış Yapın</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="182"/>
         <source>Note: The username and password is &quot;live&quot;.</source>
-        <translation>Not: Kullanıcı adı ve şifresi &quot;live&quot;dır.</translation>
+        <translation type="obsolete">Not: Kullanıcı adı ve şifresi &quot;live&quot;dır.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="199"/>
+        <location filename="../welcome/welcomeui.py" line="220"/>
         <source>Facebook Page</source>
         <translation>Facebook Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="207"/>
+        <location filename="../welcome/welcomeui.py" line="228"/>
         <source>Google+ Page</source>
         <translation>Google+ Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="215"/>
+        <location filename="../welcome/welcomeui.py" line="236"/>
         <source>Twitter Page</source>
         <translation>Twitter Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="223"/>
+        <location filename="../welcome/welcomeui.py" line="244"/>
         <source>GitHub Page</source>
         <translation>GitHub Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="234"/>
+        <location filename="../welcome/welcomeui.py" line="255"/>
         <source>Show on startup</source>
         <translation>Sistem açılışında göster</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="259"/>
+        <location filename="../welcome/welcomeui.py" line="280"/>
         <source>Start Kaptan</source>
         <translation>Kaptan&apos;ı Başlat</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="262"/>
+        <location filename="../welcome/welcomeui.py" line="283"/>
         <source>Project</source>
         <translation>Proje</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="182"/>
+        <source>Note: The Password is &quot;live&quot;.</source>
+        <translation type="obsolete">Not: Şifre &quot;live&quot; &apos;dır.</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="203"/>
+        <source>Note: The password is &quot;live&quot;.</source>
+        <translation>Not: şifre &quot;live&quot; &apos;dır.</translation>
     </message>
 </context>
 </TS>
