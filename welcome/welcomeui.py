@@ -103,7 +103,7 @@ class WelcomeUi(QWidget):
         vlayoutI.addWidget(self.docLabel)
 
         self.installDocButton = QPushButton()
-        self.installDocButton.setFixedWidth(135)
+        self.installDocButton.setFixedWidth(150)
         self.installDocButton.setCursor(Qt.PointingHandCursor)
         self.installDocButton.setText(self.tr("Installation Guide"))
         self.installDocButton.setIcon(QIcon(":/images/guide.svg"))
@@ -119,7 +119,7 @@ class WelcomeUi(QWidget):
         vlayoutI.addWidget(self.releaseButton)
 
         self.wikiButton = QPushButton()
-        self.wikiButton.setFixedWidth(135)
+        self.wikiButton.setFixedWidth(150)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
         self.wikiButton.setText(self.tr("Pisi Linux Wiki"))
         self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
@@ -138,7 +138,7 @@ class WelcomeUi(QWidget):
         vlayoutII.addWidget(self.supportLabel)
 
         self.forumButton = QPushButton()
-        self.forumButton.setFixedWidth(135)
+        self.forumButton.setFixedWidth(150)
         self.forumButton.setCursor(Qt.PointingHandCursor)
         self.forumButton.setText(self.tr("Forum"))
         self.forumButton.setIconSize(QSize(32, 32))
@@ -146,14 +146,20 @@ class WelcomeUi(QWidget):
         vlayoutII.addWidget(self.forumButton)
 
         self.chatButton = QPushButton()
-        self.chatButton.setFixedWidth(135)
+        self.chatButton.setFixedWidth(150)
         self.chatButton.setCursor(Qt.PointingHandCursor)
         self.chatButton.setText(self.tr("Chat Rooms"))
         self.chatButton.setIcon(QIcon(":/images/chat.svg"))
         self.chatButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.chatButton)
 
-        vlayoutII.addItem(QSpacerItem(20, 40, QSizePolicy.Maximum, QSizePolicy.Maximum))
+        self.bugsButton = QPushButton()
+        self.bugsButton.setFixedWidth(150)
+        self.bugsButton.setCursor(Qt.PointingHandCursor)
+        self.bugsButton.setText(self.tr("Bugs Report"))
+        self.bugsButton.setIcon(QIcon(":/images/bocuk.svg"))
+        self.bugsButton.setIconSize(QSize(32, 32))
+        vlayoutII.addWidget(self.bugsButton)
 
 
         vlayoutIII = QVBoxLayout()
@@ -168,7 +174,7 @@ class WelcomeUi(QWidget):
         vlayoutIII.addWidget(self.installLabel)
 
         self.useKalamarButton = QPushButton()
-        self.useKalamarButton.setFixedWidth(135)
+        self.useKalamarButton.setFixedWidth(150)
         self.useKalamarButton.setCursor(Qt.PointingHandCursor)
         self.useKalamarButton.setText(self.tr("Start Installation"))
         self.useKalamarButton.setIcon(QIcon(":/images/calamares.svg"))
@@ -176,7 +182,7 @@ class WelcomeUi(QWidget):
         vlayoutIII.addWidget(self.useKalamarButton)
 
         self.getInvolvedButton = QPushButton()
-        self.getInvolvedButton.setFixedWidth(135)
+        self.getInvolvedButton.setFixedWidth(150)
         self.getInvolvedButton.setCursor(Qt.PointingHandCursor)
         self.getInvolvedButton.setText(self.tr("Join Us"))
         self.getInvolvedButton.setIcon(QIcon(":/images/joinus.svg"))
@@ -271,6 +277,7 @@ class WelcomeUi(QWidget):
         self.getInvolvedButton.clicked.connect(self.involvedPage)
         self.donateButton.clicked.connect(self.donatePage)
         self.openCheckBox.clicked.connect(self.openState)
+        self.bugsButton.clicked.connect(self.issuePage)
 
     def setSystem(self, type):
         if type == "live":
@@ -323,6 +330,9 @@ class WelcomeUi(QWidget):
 
     def donatePage(self):
         QDesktopServices.openUrl(QUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
+
+    def issuePage(self):
+        QDesktopServices.openUrl(QUrl("https://github.com/pisilinux/main/issues/new"))
 
     def openState(self):
         if self.openCheckBox.isChecked():

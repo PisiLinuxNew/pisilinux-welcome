@@ -53,22 +53,22 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
         <translation>Sohbet Odaları</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="167"/>
+        <location filename="../welcome/welcomeui.py" line="173"/>
         <source>Installation</source>
         <translation>Kurulum</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="173"/>
+        <location filename="../welcome/welcomeui.py" line="179"/>
         <source>Start Installation</source>
         <translation>Kurulumu Başlat</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="181"/>
+        <location filename="../welcome/welcomeui.py" line="187"/>
         <source>Join Us</source>
         <translation>Bize Katılın</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="189"/>
+        <location filename="../welcome/welcomeui.py" line="195"/>
         <source>Donate</source>
         <translation>Bağış Yapın</translation>
     </message>
@@ -78,37 +78,37 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
         <translation type="obsolete">Not: Kullanıcı adı ve şifresi &quot;live&quot;dır.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="220"/>
+        <location filename="../welcome/welcomeui.py" line="226"/>
         <source>Facebook Page</source>
         <translation>Facebook Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="228"/>
+        <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Google+ Page</source>
         <translation>Google+ Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="236"/>
+        <location filename="../welcome/welcomeui.py" line="242"/>
         <source>Twitter Page</source>
         <translation>Twitter Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="244"/>
+        <location filename="../welcome/welcomeui.py" line="250"/>
         <source>GitHub Page</source>
         <translation>GitHub Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="255"/>
+        <location filename="../welcome/welcomeui.py" line="261"/>
         <source>Show on startup</source>
         <translation>Sistem açılışında göster</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="280"/>
+        <location filename="../welcome/welcomeui.py" line="287"/>
         <source>Start Kaptan</source>
         <translation>Kaptan&apos;ı Başlat</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="283"/>
+        <location filename="../welcome/welcomeui.py" line="290"/>
         <source>Project</source>
         <translation>Proje</translation>
     </message>
@@ -118,9 +118,14 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
         <translation type="obsolete">Not: Şifre &quot;live&quot; &apos;dır.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="203"/>
+        <location filename="../welcome/welcomeui.py" line="209"/>
         <source>Note: The password is &quot;live&quot;.</source>
         <translation>Not: şifre &quot;live&quot; &apos;dır.</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="159"/>
+        <source>Bugs Report</source>
+        <translation>Hataları Raporla</translation>
     </message>
 </context>
 </TS>

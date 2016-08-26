@@ -53,22 +53,22 @@ As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following link
         <translation>Chat Rooms</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="167"/>
+        <location filename="../welcome/welcomeui.py" line="173"/>
         <source>Installation</source>
         <translation>Installation</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="173"/>
+        <location filename="../welcome/welcomeui.py" line="179"/>
         <source>Start Installation</source>
         <translation>Start Installation</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="181"/>
+        <location filename="../welcome/welcomeui.py" line="187"/>
         <source>Join Us</source>
         <translation>Join Us</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="189"/>
+        <location filename="../welcome/welcomeui.py" line="195"/>
         <source>Donate</source>
         <translation>Donate</translation>
     </message>
@@ -78,37 +78,37 @@ As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following link
         <translation type="obsolete">Note: The username and password is &quot;live&quot;.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="220"/>
+        <location filename="../welcome/welcomeui.py" line="226"/>
         <source>Facebook Page</source>
         <translation>Facebook Page</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="228"/>
+        <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Google+ Page</source>
         <translation>Google+ Page</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="236"/>
+        <location filename="../welcome/welcomeui.py" line="242"/>
         <source>Twitter Page</source>
         <translation>Twitter Page</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="244"/>
+        <location filename="../welcome/welcomeui.py" line="250"/>
         <source>GitHub Page</source>
         <translation>GitHub Page</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="255"/>
+        <location filename="../welcome/welcomeui.py" line="261"/>
         <source>Show on startup</source>
         <translation>Show on startup</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="280"/>
+        <location filename="../welcome/welcomeui.py" line="287"/>
         <source>Start Kaptan</source>
         <translation>Start Kaptan</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="283"/>
+        <location filename="../welcome/welcomeui.py" line="290"/>
         <source>Project</source>
         <translation>Project</translation>
     </message>
@@ -118,9 +118,14 @@ As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following link
         <translation type="obsolete">Note: The Password is &quot;live&quot;.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="203"/>
+        <location filename="../welcome/welcomeui.py" line="209"/>
         <source>Note: The password is &quot;live&quot;.</source>
         <translation>Note: The password is &quot;live&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="159"/>
+        <source>Bugs Report</source>
+        <translation>Bugs Report</translation>
     </message>
 </context>
 </TS>
