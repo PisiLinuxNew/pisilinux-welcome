@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="tr_TR" sourcelanguage="en_US">
+<!DOCTYPE TS><TS version="2.0" language="tr_TR" sourcelanguage="en_US">
 <context>
     <name>WelcomeUi</name>
     <message>
@@ -125,7 +124,12 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
     <message>
         <location filename="../welcome/welcomeui.py" line="159"/>
         <source>Bugs Report</source>
-        <translation>Hataları Raporla</translation>
+        <translation type="obsolete">Hataları Raporla</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="159"/>
+        <source>Bug Report</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

@@ -156,7 +156,7 @@ class WelcomeUi(QWidget):
         self.bugsButton = QPushButton()
         self.bugsButton.setFixedWidth(150)
         self.bugsButton.setCursor(Qt.PointingHandCursor)
-        self.bugsButton.setText(self.tr("Bugs Report"))
+        self.bugsButton.setText(self.tr("Bug Report"))
         self.bugsButton.setIcon(QIcon(":/images/bocuk.svg"))
         self.bugsButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.bugsButton)

@@ -120,7 +120,12 @@ En tant que développeurs Pisi Linux, nous espérons que vous apprécierez Pisi 
     <message>
         <location filename="../welcome/welcomeui.py" line="159"/>
         <source>Bugs Report</source>
-        <translation>Bugs Rapport</translation>
+        <translation type="obsolete">Rapport d&apos;erreur</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="159"/>
+        <source>Bug Report</source>
+        <translation>Rapport d&apos;erreur</translation>
     </message>
 </context>
 </TS>

@@ -125,7 +125,12 @@ As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following link
     <message>
         <location filename="../welcome/welcomeui.py" line="159"/>
         <source>Bugs Report</source>
-        <translation>Bugs Report</translation>
+        <translation type="obsolete">Bugs Report</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="159"/>
+        <source>Bug Report</source>
+        <translation>Bug Report</translation>
     </message>
 </context>
 </TS>

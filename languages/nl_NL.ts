@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr_FR" sourcelanguage="en_US">
+<TS version="2.1" language="nl_NL" sourcelanguage="en_US">
 <context>
     <name>WelcomeUi</name>
     <message>
@@ -120,7 +120,12 @@ Wij als Pisi Linux-ontwikkelaars, we hopen dat u hebt veel plezier met Pisi Linu
     <message>
         <location filename="../welcome/welcomeui.py" line="159"/>
         <source>Bugs Report</source>
-        <translation>Bugs Rapport</translation>
+        <translation type="obsolete">Bugs Report</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="159"/>
+        <source>Bug Report</source>
+        <translation>Bug Report</translation>
     </message>
 </context>
 </TS>
