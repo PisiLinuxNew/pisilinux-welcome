@@ -1,6 +1,5 @@
 # pisilinux-welcome
-Pisi Linux live ve kurulum sonrasında kullanıcı karşılayan hoşgeldin uygulaması.
+Pisi Linux'te çalışan kipinde ve kurulum sonrasında kullanıcıyı karşılayan hoş geldiniz uygulaması.
 
 # Sanatsal İçerik
-
-Fatih Kaya <trlinux41[at]gmail.com>
+Fatih Kaya <trlinux41@gmail.com>
