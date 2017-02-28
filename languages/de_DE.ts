@@ -6,7 +6,7 @@
     <message>
         <location filename="../welcome/welcomeui.py" line="31"/>
         <source>Welcome Pisi Linux</source>
-        <translation>Willkommen Pisi Linux</translation>
+        <translation>Willkommen bei Pisi Linux</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="79"/>
