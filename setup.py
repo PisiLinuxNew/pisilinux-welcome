@@ -18,6 +18,7 @@
 #  MA 02110-1301, USA.
 #
 #
+
 from setuptools import setup, find_packages
 from os import listdir, system
 
@@ -42,8 +43,8 @@ setup(
     scripts = ["pisilinux-welcome"],
     packages = find_packages(),
     version = "1.0",
-    license = "GPL v3",
-    description = "PisiLinux Welcome",
+    license = "GPLv3",
+    description = "Pisi GNU/Linux welcome application",
     author = "Metehan Özbek",
     author_email = "mthnzbk@gmail.com",
     url = "https://github.com/PisiLinuxNew/pisilinux-welcome",
