@@ -24,10 +24,10 @@ from os import listdir, system
 
 
 langs = []
-for l in listdir('languages'):
-    if l.endswith('ts'):
-        system('lrelease-qt5 languages/%s' % l)
-        langs.append(('languages/%s' % l).replace('.ts', '.qm'))
+for file in listdir('languages'):
+    if file.endswith('ts'):
+        system('lrelease-qt5 languages/{}'.format(file))
+        langs.append(('languages/{}'.format(file)).replace('.ts', '.qm'))
 
 
 system('pyrcc5 welcome.qrc -o welcome/resource.py')
