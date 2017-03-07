@@ -51,4 +51,3 @@ setup(
     keywords = ["PyQt5"],
     data_files = datas
 )
-

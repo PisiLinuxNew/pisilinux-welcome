@@ -1,0 +1,52 @@
+diff --git a/pisilinux-welcome b/pisilinux-welcome
+index 591d69b..757dff9 100644
+--- a/pisilinux-welcome
++++ b/pisilinux-welcome
+@@ -48,4 +48,4 @@ def main():
+ 
+ 
+ if __name__ == "__main__":
+-    main()
+\ No newline at end of file
++    main()
+diff --git a/setup.py b/setup.py
+index bd4045b..510d474 100644
+--- a/setup.py
++++ b/setup.py
+@@ -51,4 +51,3 @@ setup(
+     keywords = ["PyQt5"],
+     data_files = datas
+ )
+-
+diff --git a/welcome.pro b/welcome.pro
+index b84000b..1ecd5b6 100644
+--- a/welcome.pro
++++ b/welcome.pro
+@@ -1,6 +1,4 @@
+ 
+-
+ SOURCES += welcome/welcomeui.py
+ 
+-TRANSLATIONS += languages/tr_TR.ts languages/en_US.ts languages/de_DE.ts languages/fr_FR.ts languages/nl_NL.ts
+-
++TRANSLATIONS += languages/de_DE.ts languages/en_US.ts languages/fr_FR.ts languages/nl_NL.ts languages/tr_TR.ts
+diff --git a/welcome.qrc b/welcome.qrc
+index e278a75..a9785fe 100644
+--- a/welcome.qrc
++++ b/welcome.qrc
+@@ -1,3 +1,4 @@
++<!DOCTYPE RCC><RCC version="1.0">
+ <RCC>
+     <qresource prefix="/">
+         <file>images/background.png</file>
+diff --git a/welcome/__init__.py b/welcome/__init__.py
+index 8d81029..eb2e1a6 100644
+--- a/welcome/__init__.py
++++ b/welcome/__init__.py
+@@ -18,4 +18,4 @@
+ #  MA 02110-1301, USA.
+ #
+ #
+-from .welcomeui import WelcomeUi
+\ No newline at end of file
++from .welcomeui import WelcomeUi
