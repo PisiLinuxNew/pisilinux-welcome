@@ -1,12 +1,14 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Application
-Name=Pisi Linux Welcome
-Name[tr]=Pisi Linux'a Hoşgeldiniz
-GenericName=Pisi Linux Welcome
-GenericName[tr]=Pisi Linux'a Hoşgeldiniz
+Name=Pisi GNU/Linux Welcome
+Name[tr]=Pisi GNU/Linux Hoş Geldiniz
+GenericName=Welcome application
+GenericName[tr]=Hoş geldiniz uygulaması
+Comment=The application meets you in startup
+Comment[tr]=Başlangıçta sizi karşılayan uygulama
 Exec=pisilinux-welcome
 Icon=pisilinux-welcome
 Terminal=false
-Categories=Application;Utility;
+Categories=Qt;Utility;
 StartupNotify=true
