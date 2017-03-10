@@ -73,11 +73,6 @@ En tant que développeurs Pisi Linux, nous espérons que vous apprécierez Pisi 
         <translation>Faire un don</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="182"/>
-        <source>Note: The username and password is &quot;live&quot;.</source>
-        <translation type="obsolete">Remarque: Le nom d&apos;utilisateur et mot de passe est &quot;live&quot;.</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="226"/>
         <source>Facebook Page</source>
         <translation>La page Facebook</translation>
@@ -116,11 +111,6 @@ En tant que développeurs Pisi Linux, nous espérons que vous apprécierez Pisi 
         <location filename="../welcome/welcomeui.py" line="209"/>
         <source>Note: The password is &quot;live&quot;.</source>
         <translation>Le mot de passe est &quot;live&quot;.</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="159"/>
-        <source>Bugs Report</source>
-        <translation type="obsolete">Rapport d&apos;erreur</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="159"/>

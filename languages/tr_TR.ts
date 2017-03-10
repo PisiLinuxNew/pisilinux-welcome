@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="tr_TR" sourcelanguage="en_US">
+<!DOCTYPE TS>
+<TS version="2.1" language="tr_TR" sourcelanguage="en_US">
 <context>
     <name>WelcomeUi</name>
     <message>
         <location filename="../welcome/welcomeui.py" line="31"/>
         <source>Welcome Pisi Linux</source>
-        <translation>Pisi Linux&apos;a Hoşgeldiniz</translation>
+        <translation>Pisi GNU/Linux&apos;a Hoş Geldiniz</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="79"/>
         <source>Welcome to Pisi Linux! Thank you for joining our community!
 
 As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation>Pisi Linux&apos;a Hoşgeldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
+        <translation>Pisi GNU/Linux&apos;a Hoş Geldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
 
-Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi Linux kullanmanıza yardımcı olacaktır. Deneyimlerinizi, önerilerinizi ve karşılaştığınız hataları bize bildirmekten çekinmeyiniz.</translation>
+Pisi GNU/Linux geliştiricileri olarak Pisi GNU/Linux&apos;ı kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi GNU/Linux kullanmanıza kılavuzluk edecektir. Lütfen deneyimlerinizi, önerilerinizi ve karşılaştığınız hatâları bize bildirmekten çekinmeyiniz.</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="102"/>
@@ -34,7 +35,7 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
     <message>
         <location filename="../welcome/welcomeui.py" line="124"/>
         <source>Pisi Linux Wiki</source>
-        <translation>Pisi Linux Wiki</translation>
+        <translation>Pisi GNU/Linux Wiki</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="137"/>
@@ -72,11 +73,6 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
         <translation>Bağış Yapın</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="182"/>
-        <source>Note: The username and password is &quot;live&quot;.</source>
-        <translation type="obsolete">Not: Kullanıcı adı ve şifresi &quot;live&quot;dır.</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="226"/>
         <source>Facebook Page</source>
         <translation>Facebook Sayfası</translation>
@@ -112,24 +108,14 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
         <translation>Proje</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="182"/>
-        <source>Note: The Password is &quot;live&quot;.</source>
-        <translation type="obsolete">Not: Şifre &quot;live&quot; &apos;dır.</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="209"/>
         <source>Note: The password is &quot;live&quot;.</source>
-        <translation>Not: şifre &quot;live&quot; &apos;dır.</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="159"/>
-        <source>Bugs Report</source>
-        <translation type="obsolete">Hataları Raporla</translation>
+        <translation>Not: Şifre &quot;live&quot;dır.</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="159"/>
         <source>Bug Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Hatâ Bildir</translation>
     </message>
 </context>
 </TS>
