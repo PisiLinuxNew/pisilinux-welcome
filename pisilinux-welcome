@@ -23,8 +23,8 @@
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import QTranslator, QLocale
 from welcome import WelcomeUi, resource
-import sys, os
-
+import sys
+import os
 
 
 def main():
