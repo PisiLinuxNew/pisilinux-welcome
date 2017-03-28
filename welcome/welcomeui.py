@@ -19,16 +19,19 @@
 #
 #
 
-from PyQt5.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QPushButton, QLabel, QSpacerItem, QSizePolicy, QCheckBox, QDesktopWidget
+from PyQt5.QtWidgets import (QWidget, QHBoxLayout, QVBoxLayout, QPushButton,
+                             QLabel, QSpacerItem, QSizePolicy, QCheckBox,
+                             QDesktopWidget)
 from PyQt5.QtGui import QIcon, QDesktopServices, QPixmap
 from PyQt5.QtCore import Qt, QSysInfo, QSize, QUrl, QProcess
-import os, shutil
+import os
+import shutil
 
 
 class WelcomeUi(QWidget):
     def __init__(self, parent=None):
         super().__init__()
-        self.setWindowTitle(self.tr("Welcome Pisi Linux"))
+        self.setWindowTitle(self.tr("Welcome Pisi GNU/Linux"))
         self.setFixedSize(700, 475)
         self.setWindowIcon(QIcon(":/images/pisilinux-welcome.svg"))
         self.setLayout(QVBoxLayout())
@@ -76,9 +79,9 @@ class WelcomeUi(QWidget):
         self.layout().addWidget(self.contentWidget)
 
         self.descriptionLabel = QLabel()
-        self.descriptionLabel.setText(self.tr("Welcome to Pisi Linux! Thank you for joining our community!\n\n"\
-                                              "As Pisi Linux developers, we hope you enjoy using Pisi Linux. "\
-                                              "The following links will guide you while using Pisi Linux. Please do not "\
+        self.descriptionLabel.setText(self.tr("Welcome to Pisi GNU/Linux! Thank you for joining our community!\n\n"\
+                                              "As Pisi GNU/Linux developers, we hope you enjoy using Pisi GNU/Linux. "\
+                                              "The following links will guide you while using Pisi GNU/Linux. Please do not "\
                                               "hesitate to inform about your experiences, suggestions and errors you have encountered."))
         self.descriptionLabel.setWordWrap(True)
         font = self.descriptionLabel.font()
@@ -121,7 +124,7 @@ class WelcomeUi(QWidget):
         self.wikiButton = QPushButton()
         self.wikiButton.setFixedWidth(150)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
-        self.wikiButton.setText(self.tr("Pisi Linux Wiki"))
+        self.wikiButton.setText(self.tr("Pisi GNU/Linux Wiki"))
         self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
         self.wikiButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.wikiButton)

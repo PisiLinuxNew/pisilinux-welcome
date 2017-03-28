@@ -34,20 +34,23 @@ system('pyrcc5 welcome.qrc -o welcome/resource.py')
 
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
-         ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
+         ('/usr/share/icons/hicolor/scalable/apps',
+         ['images/pisilinux-welcome.svg']),
          ('/usr/share/welcome/languages', langs),
-         ('/usr/share/welcome/data', ["data/pisilinux-2-0-kurulum-belgesi.pdf", "data/pisilinux-welcome.desktop"])]
+         ('/usr/share/welcome/data',
+         ["data/pisilinux-2-0-kurulum-belgesi.pdf",
+             "data/pisilinux-welcome.desktop"])]
 
 setup(
-    name = "pisilinux-welcome",
-    scripts = ["pisilinux-welcome"],
-    packages = find_packages(),
-    version = "1.0",
-    license = "GPLv3",
-    description = "Pisi GNU/Linux welcome application",
-    author = "Metehan Özbek",
-    author_email = "mthnzbk@gmail.com",
-    url = "https://github.com/PisiLinuxNew/pisilinux-welcome",
-    keywords = ["PyQt5"],
-    data_files = datas
+    name="pisilinux-welcome",
+    scripts=["pisilinux-welcome"],
+    packages=find_packages(),
+    version="1.0",
+    license="GPLv3",
+    description="Pisi GNU/Linux welcome application",
+    author="Metehan Özbek",
+    author_email="mthnzbk@gmail.com",
+    url="https://github.com/PisiLinuxNew/pisilinux-welcome",
+    keywords=["PyQt5"],
+    data_files=datas
 )
