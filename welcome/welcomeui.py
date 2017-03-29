@@ -37,13 +37,14 @@ class WelcomeUi(QWidget):
         self.setLayout(QVBoxLayout())
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)
-        self.setStyleSheet("QPushButton {border: none; text-align:left; color: black;} QLabel {color:black;}")
+        self.setStyleSheet("QPushButton {border: none; text-align: left; color: black;} QLabel {color:black;}")
 
         x = (QDesktopWidget().width() - self.width()) // 2
         y = (QDesktopWidget().height() - self.height()) // 2
         self.move(x, y)
 
-        #######################
+        # The header code:
+
         self.headerWidget = QWidget()
         self.headerWidget.setFixedHeight(80)
         self.headerWidget.setLayout(QHBoxLayout())
@@ -72,10 +73,11 @@ class WelcomeUi(QWidget):
         self.versionLabel.setStyleSheet("color: white; font-weight: bold;")
         self.headerWidget.layout().addWidget(self.versionLabel)
 
-        #######################
+        # The middle area code:
+
         self.contentWidget = QWidget()
         self.contentWidget.setLayout(QVBoxLayout())
-        self.contentWidget.setStyleSheet("background-color: white; ")
+        self.contentWidget.setStyleSheet("background-color: white;")
         self.layout().addWidget(self.contentWidget)
 
         self.descriptionLabel = QLabel()
@@ -83,11 +85,12 @@ class WelcomeUi(QWidget):
                                               "As Pisi GNU/Linux developers, we hope you enjoy using Pisi GNU/Linux. "\
                                               "The following links will guide you while using Pisi GNU/Linux. Please do not "\
                                               "hesitate to inform about your experiences, suggestions and errors you have encountered."))
+
         self.descriptionLabel.setWordWrap(True)
         font = self.descriptionLabel.font()
-        font.setFamily("DejaVu Sans")
         font.setPointSize(10)
         self.descriptionLabel.setFont(font)
+        self.descriptionLabel.setAlignment(Qt.AlignHCenter)
         self.descriptionLabel.setStyleSheet("color: black;")
         self.contentWidget.layout().addWidget(self.descriptionLabel)
 
@@ -213,8 +216,8 @@ class WelcomeUi(QWidget):
         self.noteLabel.setAlignment(Qt.AlignHCenter)
         self.contentWidget.layout().addWidget(self.noteLabel)
 
-
-        #######################
+        # The footer code:
+        
         self.footerWidget = QWidget()
         self.footerWidget.setFixedHeight(50)
         self.footerWidget.setLayout(QHBoxLayout())
