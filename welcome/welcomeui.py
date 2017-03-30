@@ -109,7 +109,7 @@ class WelcomeUi(QWidget):
         vlayoutI.addWidget(self.docLabel)
 
         self.installDocButton = QPushButton()
-        self.installDocButton.setFixedWidth(150)
+        self.installDocButton.setFixedWidth(160)
         self.installDocButton.setCursor(Qt.PointingHandCursor)
         self.installDocButton.setText(self.tr("Installation Guide"))
         self.installDocButton.setIcon(QIcon(":/images/guide.svg"))
@@ -117,7 +117,7 @@ class WelcomeUi(QWidget):
         vlayoutI.addWidget(self.installDocButton)
 
         self.releaseButton = QPushButton()
-        self.releaseButton.setFixedWidth(135)
+        self.releaseButton.setFixedWidth(160)
         self.releaseButton.setCursor(Qt.PointingHandCursor)
         self.releaseButton.setText(self.tr("Release Notes"))
         self.releaseButton.setIcon(QIcon(":/images/info.svg"))
@@ -125,7 +125,7 @@ class WelcomeUi(QWidget):
         vlayoutI.addWidget(self.releaseButton)
 
         self.wikiButton = QPushButton()
-        self.wikiButton.setFixedWidth(150)
+        self.wikiButton.setFixedWidth(160)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
         self.wikiButton.setText(self.tr("Pisi GNU/Linux Wiki"))
         self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
@@ -144,7 +144,7 @@ class WelcomeUi(QWidget):
         vlayoutII.addWidget(self.supportLabel)
 
         self.forumButton = QPushButton()
-        self.forumButton.setFixedWidth(150)
+        self.forumButton.setFixedWidth(160)
         self.forumButton.setCursor(Qt.PointingHandCursor)
         self.forumButton.setText(self.tr("Forum"))
         self.forumButton.setIconSize(QSize(32, 32))
@@ -152,7 +152,7 @@ class WelcomeUi(QWidget):
         vlayoutII.addWidget(self.forumButton)
 
         self.chatButton = QPushButton()
-        self.chatButton.setFixedWidth(150)
+        self.chatButton.setFixedWidth(160)
         self.chatButton.setCursor(Qt.PointingHandCursor)
         self.chatButton.setText(self.tr("Chat Rooms"))
         self.chatButton.setIcon(QIcon(":/images/chat.svg"))
@@ -160,13 +160,12 @@ class WelcomeUi(QWidget):
         vlayoutII.addWidget(self.chatButton)
 
         self.bugsButton = QPushButton()
-        self.bugsButton.setFixedWidth(150)
+        self.bugsButton.setFixedWidth(160)
         self.bugsButton.setCursor(Qt.PointingHandCursor)
         self.bugsButton.setText(self.tr("Bug Report"))
-        self.bugsButton.setIcon(QIcon(":/images/bocuk.svg"))
+        self.bugsButton.setIcon(QIcon(":/images/bug.svg"))
         self.bugsButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.bugsButton)
-
 
         vlayoutIII = QVBoxLayout()
 
@@ -179,8 +178,9 @@ class WelcomeUi(QWidget):
         self.installLabel.setText(self.tr("Installation"))
         vlayoutIII.addWidget(self.installLabel)
 
+        #TODO: Calamares -> YALI
         self.useKalamarButton = QPushButton()
-        self.useKalamarButton.setFixedWidth(150)
+        self.useKalamarButton.setFixedWidth(160)
         self.useKalamarButton.setCursor(Qt.PointingHandCursor)
         self.useKalamarButton.setText(self.tr("Start Installation"))
         self.useKalamarButton.setIcon(QIcon(":/images/calamares.svg"))
@@ -188,7 +188,7 @@ class WelcomeUi(QWidget):
         vlayoutIII.addWidget(self.useKalamarButton)
 
         self.getInvolvedButton = QPushButton()
-        self.getInvolvedButton.setFixedWidth(150)
+        self.getInvolvedButton.setFixedWidth(160)
         self.getInvolvedButton.setCursor(Qt.PointingHandCursor)
         self.getInvolvedButton.setText(self.tr("Join Us"))
         self.getInvolvedButton.setIcon(QIcon(":/images/joinus.svg"))
@@ -196,7 +196,7 @@ class WelcomeUi(QWidget):
         vlayoutIII.addWidget(self.getInvolvedButton)
 
         self.donateButton = QPushButton()
-        self.donateButton.setFixedWidth(150)
+        self.donateButton.setFixedWidth(160)
         self.donateButton.setCursor(Qt.PointingHandCursor)
         self.donateButton.setText(self.tr("Donate"))
         self.donateButton.setIcon(QIcon(":/images/donate.svg"))
