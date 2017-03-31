@@ -113,7 +113,7 @@ class WelcomeUi(QWidget):
         self.installDocButton.setCursor(Qt.PointingHandCursor)
         self.installDocButton.setText(self.tr("Installation Guide"))
         self.installDocButton.setIcon(QIcon(":/images/guide.svg"))
-        self.installDocButton.setIconSize(QSize(32,32))
+        self.installDocButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.installDocButton)
 
         self.releaseButton = QPushButton()
@@ -178,7 +178,7 @@ class WelcomeUi(QWidget):
         self.installLabel.setText(self.tr("Installation"))
         vlayoutIII.addWidget(self.installLabel)
 
-        #TODO: Calamares -> YALI
+        # TODO: Calamares -> YALI
         self.useKalamarButton = QPushButton()
         self.useKalamarButton.setFixedWidth(160)
         self.useKalamarButton.setCursor(Qt.PointingHandCursor)
@@ -217,7 +217,7 @@ class WelcomeUi(QWidget):
         self.contentWidget.layout().addWidget(self.noteLabel)
 
         # The footer code:
-        
+
         self.footerWidget = QWidget()
         self.footerWidget.setFixedHeight(50)
         self.footerWidget.setLayout(QHBoxLayout())
@@ -268,14 +268,12 @@ class WelcomeUi(QWidget):
         self.openCheckBox.setStyleSheet("color: white;")
         self.footerWidget.layout().addWidget(self.openCheckBox)
 
-
         self.facebookButton.clicked.connect(self.facebookPage)
         self.googleButton.clicked.connect(self.googlePage)
         self.twitterButton.clicked.connect(self.twitterPage)
         self.githubButton.clicked.connect(self.githubPage)
 
-
-        self.installDocButton.clicked.connect(self.installedDoc)
+        self.installDocButton.clicked.connect(self.installDoc)
         self.releaseButton.clicked.connect(self.releaseNote)
         self.wikiButton.clicked.connect(self.wikiPage)
         self.forumButton.clicked.connect(self.forumPage)
@@ -309,7 +307,7 @@ class WelcomeUi(QWidget):
     def githubPage(self):
         QDesktopServices.openUrl(QUrl("https://github.com/pisilinux"))
 
-    def installedDoc(self):
+    def installDoc(self):
         QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
 
     def releaseNote(self):
@@ -323,7 +321,6 @@ class WelcomeUi(QWidget):
 
     def chatPages(self):
         QDesktopServices.openUrl(QUrl("http://pisi.slack.com"))
-        QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/irc-2/"))
 
     def calamaresExec(self):
         QProcess.startDetached("sudo LC_ALL=en_US calamares &")
@@ -346,7 +343,7 @@ class WelcomeUi(QWidget):
                 shutil.copy("/usr/share/welcome/data/pisilinux-welcome.desktop",
                             os.path.join(os.environ["HOME"], ".config", "autostart"))
 
-            except FileNotFoundError as err:
+            except OSError as err:
                 print(err)
 
         else:
