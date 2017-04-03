@@ -128,7 +128,7 @@ class WelcomeUi(QWidget):
         self.wikiButton.setFixedWidth(160)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
         self.wikiButton.setText(self.tr("Pisi GNU/Linux Wiki"))
-        self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
+        self.wikiButton.setIcon(QIcon(":/images/wikipedia-logo.svg"))
         self.wikiButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.wikiButton)
 
@@ -227,34 +227,50 @@ class WelcomeUi(QWidget):
         self.facebookButton = QPushButton()
         self.facebookButton.setFixedSize(36, 36)
         self.facebookButton.setIconSize(QSize(36, 36))
-        self.facebookButton.setIcon(QIcon(":/images/facebook.png"))
+        self.facebookButton.setIcon(QIcon(":/images/facebook.svg"))
         self.facebookButton.setCursor(Qt.PointingHandCursor)
         self.facebookButton.setToolTip(self.tr("Facebook Page"))
         self.footerWidget.layout().addWidget(self.facebookButton)
 
-        self.googleButton = QPushButton()
-        self.googleButton.setFixedSize(36, 36)
-        self.googleButton.setIconSize(QSize(36, 36))
-        self.googleButton.setIcon(QIcon(":/images/google.png"))
-        self.googleButton.setCursor(Qt.PointingHandCursor)
-        self.googleButton.setToolTip(self.tr("Google+ Page"))
-        self.footerWidget.layout().addWidget(self.googleButton)
-
         self.twitterButton = QPushButton()
         self.twitterButton.setFixedSize(36, 36)
         self.twitterButton.setIconSize(QSize(36, 36))
-        self.twitterButton.setIcon(QIcon(":/images/twitter.png"))
+        self.twitterButton.setIcon(QIcon(":/images/twitter.svg"))
         self.twitterButton.setCursor(Qt.PointingHandCursor)
         self.twitterButton.setToolTip(self.tr("Twitter Page"))
         self.footerWidget.layout().addWidget(self.twitterButton)
 
+        self.googleButton = QPushButton()
+        self.googleButton.setFixedSize(36, 36)
+        self.googleButton.setIconSize(QSize(36, 36))
+        self.googleButton.setIcon(QIcon(":/images/google-plus.svg"))
+        self.googleButton.setCursor(Qt.PointingHandCursor)
+        self.googleButton.setToolTip(self.tr("Google+ Page"))
+        self.footerWidget.layout().addWidget(self.googleButton)
+
+        self.instagramButton = QPushButton()
+        self.instagramButton.setFixedSize(36, 36)
+        self.instagramButton.setIconSize(QSize(36, 36))
+        self.instagramButton.setIcon(QIcon(":/images/instagram.svg"))
+        self.instagramButton.setCursor(Qt.PointingHandCursor)
+        self.instagramButton.setToolTip(self.tr("Instagram Page"))
+        self.footerWidget.layout().addWidget(self.instagramButton)
+
         self.githubButton = QPushButton()
         self.githubButton.setFixedSize(36, 36)
         self.githubButton.setIconSize(QSize(36, 36))
-        self.githubButton.setIcon(QIcon(":/images/git.svg"))
+        self.githubButton.setIcon(QIcon(":/images/github-logo.svg"))
         self.githubButton.setCursor(Qt.PointingHandCursor)
         self.githubButton.setToolTip(self.tr("GitHub Page"))
         self.footerWidget.layout().addWidget(self.githubButton)
+
+        self.slackButton = QPushButton()
+        self.slackButton.setFixedSize(36, 36)
+        self.slackButton.setIconSize(QSize(36, 36))
+        self.slackButton.setIcon(QIcon(":/images/Slack.png"))
+        self.slackButton.setCursor(Qt.PointingHandCursor)
+        self.slackButton.setToolTip(self.tr("Slack Page"))
+        self.footerWidget.layout().addWidget(self.slackButton)
 
         self.footerWidget.layout().addItem(QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
 
@@ -269,9 +285,11 @@ class WelcomeUi(QWidget):
         self.footerWidget.layout().addWidget(self.openCheckBox)
 
         self.facebookButton.clicked.connect(self.facebookPage)
-        self.googleButton.clicked.connect(self.googlePage)
         self.twitterButton.clicked.connect(self.twitterPage)
+        self.googleButton.clicked.connect(self.googlePage)
+        self.instagramButton.clicked.connect(self.instagramPage)
         self.githubButton.clicked.connect(self.githubPage)
+        self.slackButton.clicked.connect(self.slackPage)
 
         self.installDocButton.clicked.connect(self.installDoc)
         self.releaseButton.clicked.connect(self.releaseNote)
@@ -298,14 +316,20 @@ class WelcomeUi(QWidget):
     def facebookPage(self):
         QDesktopServices.openUrl(QUrl("https://www.facebook.com/Pisilinux/"))
 
-    def googlePage(self):
-        QDesktopServices.openUrl(QUrl("https://plus.google.com/communities/113565681602860915332"))
-
     def twitterPage(self):
         QDesktopServices.openUrl(QUrl("https://twitter.com/pisilinux"))
 
+    def googlePage(self):
+        QDesktopServices.openUrl(QUrl("https://plus.google.com/communities/113565681602860915332"))
+
+    def instagramPage(self):
+        QDesktopServices.openUrl(QUrl("https://www.instagram.com/pisilinux/"))
+
     def githubPage(self):
         QDesktopServices.openUrl(QUrl("https://github.com/pisilinux"))
+
+    def slackPage(self):
+        QDesktopServices.openUrl(QUrl("http://pisi.slack.com/"))
 
     def installDoc(self):
         QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
