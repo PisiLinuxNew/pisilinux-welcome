@@ -37,7 +37,8 @@ class WelcomeUi(QWidget):
         self.setLayout(QVBoxLayout())
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)
-        self.setStyleSheet("QPushButton {border: none; text-align: left; color: black;} QLabel {color:black;}")
+        self.setStyleSheet("QPushButton {border: none; text-align: left; color:\
+        black;} QLabel {color:black;}")
 
         x = (QDesktopWidget().width() - self.width()) // 2
         y = (QDesktopWidget().height() - self.height()) // 2
@@ -48,13 +49,15 @@ class WelcomeUi(QWidget):
         self.headerWidget = QWidget()
         self.headerWidget.setFixedHeight(80)
         self.headerWidget.setLayout(QHBoxLayout())
-        self.headerWidget.setStyleSheet("background-image: url(:/images/background.png);")
+        self.headerWidget.setStyleSheet("background-image:\
+        url(:/images/background.png);")
         self.layout().addWidget(self.headerWidget)
 
         self.logoLabel = QLabel()
         self.logoLabel.setFixedSize(64, 64)
         self.logoLabel.setScaledContents(True)
-        self.logoLabel.setPixmap(QIcon(":/images/pisi-white.svg").pixmap(self.logoLabel.size()))
+        self.logoLabel.setPixmap(
+            QIcon(":/images/pisi-white.svg").pixmap(self.logoLabel.size()))
         self.headerWidget.layout().addWidget(self.logoLabel)
 
         self.pisiLogoLabel = QLabel()
@@ -63,13 +66,16 @@ class WelcomeUi(QWidget):
         self.pisiLogoLabel.setPixmap(QPixmap(":/images/pisi.png"))
         self.headerWidget.layout().addWidget(self.pisiLogoLabel)
 
-        self.headerWidget.layout().addItem(QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
+        self.headerWidget.layout().addItem(
+            QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
 
         self.versionLabel = QLabel()
         font = self.versionLabel.font()
         font.setPointSize(12)
         self.versionLabel.setFont(font)
-        self.versionLabel.setText("{} - {}".format(QSysInfo.productVersion(), QSysInfo.currentCpuArchitecture()))
+        self.versionLabel.setText(
+            "{} - {}".format(
+                QSysInfo.productVersion(), QSysInfo.currentCpuArchitecture()))
         self.versionLabel.setStyleSheet("color: white; font-weight: bold;")
         self.headerWidget.layout().addWidget(self.versionLabel)
 
@@ -81,10 +87,15 @@ class WelcomeUi(QWidget):
         self.layout().addWidget(self.contentWidget)
 
         self.descriptionLabel = QLabel()
-        self.descriptionLabel.setText(self.tr("Welcome to Pisi GNU/Linux! Thank you for joining our community!\n\n"\
-                                              "As Pisi GNU/Linux developers, we hope you enjoy using Pisi GNU/Linux. "\
-                                              "The following links will guide you while using Pisi GNU/Linux. Please do not "\
-                                              "hesitate to inform about your experiences, suggestions and errors you have encountered."))
+        self.descriptionLabel.setText(
+            self.tr("Welcome to Pisi GNU/Linux!"
+                    " Thank you for joining our community!\n\n"
+                    "As Pisi GNU/Linux developers,"
+                    " we hope you enjoy using Pisi GNU/Linux."
+                    " The following links will guide you while"
+                    " using Pisi GNU/Linux. Please do not"
+                    " hesitate to inform about your experiences,"
+                    " suggestions and errors you have encountered."))
 
         self.descriptionLabel.setWordWrap(True)
         font = self.descriptionLabel.font()
@@ -221,7 +232,8 @@ class WelcomeUi(QWidget):
         self.footerWidget = QWidget()
         self.footerWidget.setFixedHeight(50)
         self.footerWidget.setLayout(QHBoxLayout())
-        self.footerWidget.setStyleSheet("background-image: url(:/images/background.png);")
+        self.footerWidget.setStyleSheet(
+            "background-image: url(:/images/background.png);")
         self.layout().addWidget(self.footerWidget)
 
         self.facebookButton = QPushButton()
@@ -272,11 +284,15 @@ class WelcomeUi(QWidget):
         self.slackButton.setToolTip(self.tr("Slack Page"))
         self.footerWidget.layout().addWidget(self.slackButton)
 
-        self.footerWidget.layout().addItem(QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
+        self.footerWidget.layout().addItem(
+            QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
 
         self.openCheckBox = QCheckBox()
-        self.openCheckBox.setChecked(os.path.exists(os.path.join(os.environ["HOME"],
-                                                                 ".config", "autostart", "pisilinux-welcome.desktop")))
+        self.openCheckBox.setChecked(
+            os.path.exists(os.path.join(os.environ["HOME"],
+                                        ".config",
+                                        "autostart",
+                                        "pisilinux-welcome.desktop")))
         font = self.openCheckBox.font()
         font.setBold(True)
         self.openCheckBox.setFont(font)
@@ -311,7 +327,8 @@ class WelcomeUi(QWidget):
             self.useKalamarButton.clicked.connect(self.kaptanExec)
             self.installLabel.setText(self.tr("Project"))
             self.noteLabel.hide()
-            self.contentWidget.layout().addItem(QSpacerItem(20, 50, QSizePolicy.Expanding, QSizePolicy.Minimum))
+            self.contentWidget.layout().addItem(
+                QSpacerItem(20, 50, QSizePolicy.Expanding, QSizePolicy.Minimum))
 
     def facebookPage(self):
         QDesktopServices.openUrl(QUrl("https://www.facebook.com/Pisilinux/"))
@@ -320,7 +337,8 @@ class WelcomeUi(QWidget):
         QDesktopServices.openUrl(QUrl("https://twitter.com/pisilinux"))
 
     def googlePage(self):
-        QDesktopServices.openUrl(QUrl("https://plus.google.com/communities/113565681602860915332"))
+        QDesktopServices.openUrl(
+            QUrl("https://plus.google.com/communities/113565681602860915332"))
 
     def instagramPage(self):
         QDesktopServices.openUrl(QUrl("https://www.instagram.com/pisilinux/"))
@@ -332,7 +350,9 @@ class WelcomeUi(QWidget):
         QDesktopServices.openUrl(QUrl("http://pisi.slack.com/"))
 
     def installDoc(self):
-        QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
+        QProcess.startDetached(
+            "xdg-open\
+            /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
 
     def releaseNote(self):
         pass
@@ -356,23 +376,30 @@ class WelcomeUi(QWidget):
         QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/iletisim/"))
 
     def donatePage(self):
-        QDesktopServices.openUrl(QUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
+        QDesktopServices.openUrl(
+            QUrl("https://www.paypal.com/cgi-bin/webscr\
+            ?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
 
     def issuePage(self):
-        QDesktopServices.openUrl(QUrl("https://github.com/pisilinux/main/issues/new"))
+        QDesktopServices.openUrl(
+            QUrl("https://github.com/pisilinux/main/issues/new"))
 
     def openState(self):
         if self.openCheckBox.isChecked():
             try:
                 shutil.copy("/usr/share/welcome/data/pisilinux-welcome.desktop",
-                            os.path.join(os.environ["HOME"], ".config", "autostart"))
+                            os.path.join(os.environ["HOME"],
+                                         ".config", "autostart"))
 
             except OSError as err:
                 print(err)
 
         else:
             try:
-                os.remove(os.path.join(os.environ["HOME"], ".config", "autostart", "pisilinux-welcome.desktop"))
+                os.remove(
+                    os.path.join(
+                        os.environ["HOME"], ".config", "autostart",
+                        "pisilinux-welcome.desktop"))
 
             except OSError as err:
                 print(err)
