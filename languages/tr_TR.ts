@@ -12,7 +12,7 @@
         <source>Welcome to Pisi Linux! Thank you for joining our community!
 
 As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation>Pisi Linux&apos;a Hoşgeldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
+        <translation>Pisi Linux&apos;a Hoşgelmişsin!sefalar getirmişsin! Topluluğumuza katıldığınız için teşekkür ederiz!
 
 Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi Linux kullanmanıza yardımcı olacaktır. Deneyimlerinizi, önerilerinizi ve karşılaştığınız hataları bize bildirmekten çekinmeyiniz.</translation>
     </message>
