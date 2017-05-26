@@ -225,6 +225,8 @@ class WelcomeUi(QWidget):
         self.noteLabel.setFont(font)
         self.noteLabel.setText(self.tr("Note: The password is \"live\"."))
         self.noteLabel.setAlignment(Qt.AlignHCenter)
+        self.noteLabel.setMinimumSize(250, 50)
+        self.noteLabel.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Maximum)
         self.contentWidget.layout().addWidget(self.noteLabel)
 
         # The footer code:
