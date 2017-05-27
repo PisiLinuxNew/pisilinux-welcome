@@ -28,7 +28,7 @@ import os
 import shutil
 
 
-class WelcomeUi(QWidget):
+class welcomeui(QWidget):
     def __init__(self, parent=None):
         super().__init__()
         self.setWindowTitle(self.tr("Welcome Pisi GNU/Linux"))

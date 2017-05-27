@@ -19,4 +19,4 @@
 #
 #
 
-from .welcomeui import WelcomeUi
+from .welcomeui import welcomeui
