@@ -25,4 +25,4 @@ Instagram icon designed by Pixel Buddha (nfo at pixelbuddha dot net) from Flatic
 Slack icon designed by creatiVe5 (http://creative5.deviantart.com/). (**License:** Freeware non-commercial use)
 
 # To do
-* pisilinux-welcome has been written for Pisi GNU/Linux with Calamares installation and should be adapted for YALI also.
+See open issues (https://github.com/PisiLinuxNew/pisilinux-welcome/issues).
