@@ -10,6 +10,9 @@ After installation, you can run that in any directory:
 
     pisilinux-welcome
 
+# Versioning
+1.0 is final version currently.
+
 # Artwork
 Fatih Kaya (trlinux41 at gmail dot com)
 
@@ -20,3 +23,6 @@ GitHub icon designed by Dave Gandy (http://fontawesome.io/) and altered by Fatih
 Instagram icon designed by Pixel Buddha (nfo at pixelbuddha dot net) from Flaticon. (**License:** [Flaticon Basic License](http://file000.flaticon.com/downloads/license/license.pdf))
 
 Slack icon designed by creatiVe5 (http://creative5.deviantart.com/). (**License:** Freeware non-commercial use)
+
+# To do
+* pisilinux-welcome has been written for Pisi GNU/Linux with Calamares installation and should be adapted for YALI also.

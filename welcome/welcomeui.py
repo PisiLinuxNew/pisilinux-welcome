@@ -189,7 +189,7 @@ class welcomeui(QWidget):
         self.installLabel.setText(self.tr("Installation"))
         vlayoutIII.addWidget(self.installLabel)
 
-        # TODO: Calamares -> YALI
+        # TODO: Also for YALI
         self.useKalamarButton = QPushButton()
         self.useKalamarButton.setFixedWidth(160)
         self.useKalamarButton.setCursor(Qt.PointingHandCursor)
@@ -309,7 +309,6 @@ class welcomeui(QWidget):
         self.githubButton.clicked.connect(self.githubPage)
         self.slackButton.clicked.connect(self.slackPage)
 
-        self.installDocButton.clicked.connect(self.installDoc)
         self.releaseButton.clicked.connect(self.releaseNote)
         self.wikiButton.clicked.connect(self.wikiPage)
         self.forumButton.clicked.connect(self.forumPage)
@@ -321,13 +320,22 @@ class welcomeui(QWidget):
 
     def setSystem(self, type):
         if type == "live":
+            self.installDocButton.clicked.connect(self.installDoc)
+
+            # TODO: Also for YALI
             self.useKalamarButton.clicked.connect(self.calamaresExec)
 
         else:
+            self.installDocButton.setText(self.tr("Pisi Guide"))
+            self.installDocButton.clicked.connect(self.pisiDoc)
+
+            self.installLabel.setText(self.tr("Project"))
+
+            # TODO: Also for YALI
             self.useKalamarButton.setText(self.tr("Start Kaptan"))
             self.useKalamarButton.setIcon(QIcon(":/images/kaptan.svg"))
             self.useKalamarButton.clicked.connect(self.kaptanExec)
-            self.installLabel.setText(self.tr("Project"))
+
             self.noteLabel.hide()
             self.contentWidget.layout().addItem(
                 QSpacerItem(20, 50, QSizePolicy.Expanding, QSizePolicy.Minimum))
@@ -351,10 +359,16 @@ class welcomeui(QWidget):
     def slackPage(self):
         QDesktopServices.openUrl(QUrl("http://pisi.slack.com/"))
 
+    # TODO: Also for YALI
     def installDoc(self):
         QProcess.startDetached(
             "xdg-open\
-            /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
+            /usr/share/welcome/data/pisi-kurulum-belgesi-calamares.pdf")
+
+    def pisiDoc(self):
+        QProcess.startDetached(
+            "xdg-open\
+            /usr/share/welcome/data/pisi-kullanimi.pdf")
 
     def releaseNote(self):
         pass
@@ -368,6 +382,7 @@ class welcomeui(QWidget):
     def chatPages(self):
         QDesktopServices.openUrl(QUrl("http://pisi.slack.com"))
 
+    # TODO: Also for YALI
     def calamaresExec(self):
         QProcess.startDetached("sudo LC_ALL=en_US calamares &")
 

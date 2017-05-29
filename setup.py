@@ -38,8 +38,8 @@ datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ['images/pisilinux-welcome.svg']),
          ('/usr/share/welcome/languages', langs),
          ('/usr/share/welcome/data',
-         ["data/pisilinux-2-0-kurulum-belgesi.pdf",
-             "data/pisilinux-welcome.desktop"])]
+         ["data/pisi-kurulum-belgesi-calamares.pdf", "data/pisi-kullanimi.pdf",
+             "data/pisilinux-welcome.desktop"])] #TODO: Also for YALI
 
 setup(
     name="pisilinux-welcome",
