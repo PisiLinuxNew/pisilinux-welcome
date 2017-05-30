@@ -14,11 +14,11 @@
         <file>images/instagram.svg</file>
         <file>images/joinus.svg</file>
         <file>images/kaptan.svg</file>
-        <file>images/pisi.png</file>
         <file>images/pisilinux-welcome.svg</file>
+        <file>images/pisi-text.png</file>
         <file>images/pisi-white.svg</file>
         <file>images/Slack.png</file>
         <file>images/twitter.svg</file>
-        <file>images/wikipedia-logo.svg</file>
+        <file>images/wiki.svg</file>
     </qresource>
 </RCC>

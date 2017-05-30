@@ -53,18 +53,18 @@ class welcomeui(QWidget):
         url(:/images/background.png);")
         self.layout().addWidget(self.headerWidget)
 
-        self.logoLabel = QLabel()
-        self.logoLabel.setFixedSize(64, 64)
-        self.logoLabel.setScaledContents(True)
-        self.logoLabel.setPixmap(
-            QIcon(":/images/pisi-white.svg").pixmap(self.logoLabel.size()))
-        self.headerWidget.layout().addWidget(self.logoLabel)
+        self.pisiWhiteLogo = QLabel()
+        self.pisiWhiteLogo.setFixedSize(64, 64)
+        self.pisiWhiteLogo.setScaledContents(True)
+        self.pisiWhiteLogo.setPixmap(
+            QIcon(":/images/pisi-white.svg").pixmap(self.pisiWhiteLogo.size()))
+        self.headerWidget.layout().addWidget(self.pisiWhiteLogo)
 
-        self.pisiLogoLabel = QLabel()
-        self.pisiLogoLabel.setFixedSize(157, 48)
-        self.pisiLogoLabel.setScaledContents(True)
-        self.pisiLogoLabel.setPixmap(QPixmap(":/images/pisi.png"))
-        self.headerWidget.layout().addWidget(self.pisiLogoLabel)
+        self.pisiTextLabel = QLabel()
+        self.pisiTextLabel.setFixedSize(157, 48)
+        self.pisiTextLabel.setScaledContents(True)
+        self.pisiTextLabel.setPixmap(QPixmap(":/images/pisi-text.png"))
+        self.headerWidget.layout().addWidget(self.pisiTextLabel)
 
         self.headerWidget.layout().addItem(
             QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
@@ -86,8 +86,8 @@ class welcomeui(QWidget):
         self.contentWidget.setStyleSheet("background-color: white;")
         self.layout().addWidget(self.contentWidget)
 
-        self.descriptionLabel = QLabel()
-        self.descriptionLabel.setText(
+        self.meetingLabel = QLabel()
+        self.meetingLabel.setText(
             self.tr("Welcome to Pisi GNU/Linux!"
                     " Thank you for joining our community!\n\n"
                     "As Pisi GNU/Linux developers,"
@@ -97,62 +97,62 @@ class welcomeui(QWidget):
                     " hesitate to inform about your experiences,"
                     " suggestions and errors you have encountered."))
 
-        self.descriptionLabel.setWordWrap(True)
-        font = self.descriptionLabel.font()
+        self.meetingLabel.setWordWrap(True)
+        font = self.meetingLabel.font()
         font.setPointSize(10)
-        self.descriptionLabel.setFont(font)
-        self.descriptionLabel.setAlignment(Qt.AlignHCenter)
-        self.descriptionLabel.setStyleSheet("color: black;")
-        self.contentWidget.layout().addWidget(self.descriptionLabel)
+        self.meetingLabel.setFont(font)
+        self.meetingLabel.setAlignment(Qt.AlignHCenter)
+        self.meetingLabel.setStyleSheet("color: black;")
+        self.contentWidget.layout().addWidget(self.meetingLabel)
 
         self.mainLayout = QHBoxLayout()
         self.contentWidget.layout().addLayout(self.mainLayout)
 
         vlayoutI = QVBoxLayout()
 
-        self.docLabel = QLabel()
-        font = self.docLabel.font()
+        self.docsHeader = QLabel()
+        font = self.docsHeader.font()
         font.setPointSize(14)
         font.setBold(True)
-        self.docLabel.setFont(font)
-        self.docLabel.setAlignment(Qt.AlignHCenter)
-        self.docLabel.setText(self.tr("Documents"))
-        vlayoutI.addWidget(self.docLabel)
+        self.docsHeader.setFont(font)
+        self.docsHeader.setAlignment(Qt.AlignHCenter)
+        self.docsHeader.setText(self.tr("Documents"))
+        vlayoutI.addWidget(self.docsHeader)
 
-        self.installDocButton = QPushButton()
-        self.installDocButton.setFixedWidth(160)
-        self.installDocButton.setCursor(Qt.PointingHandCursor)
-        self.installDocButton.setText(self.tr("Installation Guide"))
-        self.installDocButton.setIcon(QIcon(":/images/guide.svg"))
-        self.installDocButton.setIconSize(QSize(32, 32))
-        vlayoutI.addWidget(self.installDocButton)
+        self.installationDocButton = QPushButton()
+        self.installationDocButton.setFixedWidth(160)
+        self.installationDocButton.setCursor(Qt.PointingHandCursor)
+        self.installationDocButton.setText(self.tr("Installation Guide"))
+        self.installationDocButton.setIcon(QIcon(":/images/guide.svg"))
+        self.installationDocButton.setIconSize(QSize(32, 32))
+        vlayoutI.addWidget(self.installationDocButton)
 
-        self.releaseButton = QPushButton()
-        self.releaseButton.setFixedWidth(160)
-        self.releaseButton.setCursor(Qt.PointingHandCursor)
-        self.releaseButton.setText(self.tr("Release Notes"))
-        self.releaseButton.setIcon(QIcon(":/images/info.svg"))
-        self.releaseButton.setIconSize(QSize(32, 32))
-        vlayoutI.addWidget(self.releaseButton)
+        self.releaseNotesButton = QPushButton()
+        self.releaseNotesButton.setFixedWidth(160)
+        self.releaseNotesButton.setCursor(Qt.PointingHandCursor)
+        self.releaseNotesButton.setText(self.tr("Release Notes"))
+        self.releaseNotesButton.setIcon(QIcon(":/images/info.svg"))
+        self.releaseNotesButton.setIconSize(QSize(32, 32))
+        vlayoutI.addWidget(self.releaseNotesButton)
 
         self.wikiButton = QPushButton()
         self.wikiButton.setFixedWidth(160)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
         self.wikiButton.setText(self.tr("Pisi GNU/Linux Wiki"))
-        self.wikiButton.setIcon(QIcon(":/images/wikipedia-logo.svg"))
+        self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
         self.wikiButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.wikiButton)
 
         vlayoutII = QVBoxLayout()
 
-        self.supportLabel = QLabel()
-        font = self.supportLabel.font()
+        self.supportHeader = QLabel()
+        font = self.supportHeader.font()
         font.setPointSize(14)
         font.setBold(True)
-        self.supportLabel.setFont(font)
-        self.supportLabel.setAlignment(Qt.AlignHCenter)
-        self.supportLabel.setText(self.tr("Support"))
-        vlayoutII.addWidget(self.supportLabel)
+        self.supportHeader.setFont(font)
+        self.supportHeader.setAlignment(Qt.AlignHCenter)
+        self.supportHeader.setText(self.tr("Support"))
+        vlayoutII.addWidget(self.supportHeader)
 
         self.forumButton = QPushButton()
         self.forumButton.setFixedWidth(160)
@@ -180,31 +180,31 @@ class welcomeui(QWidget):
 
         vlayoutIII = QVBoxLayout()
 
-        self.installLabel = QLabel()
-        font = self.installLabel.font()
+        self.installationHeader = QLabel()
+        font = self.installationHeader.font()
         font.setPointSize(14)
         font.setBold(True)
-        self.installLabel.setFont(font)
-        self.installLabel.setAlignment(Qt.AlignHCenter)
-        self.installLabel.setText(self.tr("Installation"))
-        vlayoutIII.addWidget(self.installLabel)
+        self.installationHeader.setFont(font)
+        self.installationHeader.setAlignment(Qt.AlignHCenter)
+        self.installationHeader.setText(self.tr("Installation"))
+        vlayoutIII.addWidget(self.installationHeader)
 
         # TODO: Also for YALI
-        self.useKalamarButton = QPushButton()
-        self.useKalamarButton.setFixedWidth(160)
-        self.useKalamarButton.setCursor(Qt.PointingHandCursor)
-        self.useKalamarButton.setText(self.tr("Start Installation"))
-        self.useKalamarButton.setIcon(QIcon(":/images/calamares.svg"))
-        self.useKalamarButton.setIconSize(QSize(32, 32))
-        vlayoutIII.addWidget(self.useKalamarButton)
+        self.calamaresButton = QPushButton()
+        self.calamaresButton.setFixedWidth(160)
+        self.calamaresButton.setCursor(Qt.PointingHandCursor)
+        self.calamaresButton.setText(self.tr("Start Installation"))
+        self.calamaresButton.setIcon(QIcon(":/images/calamares.svg"))
+        self.calamaresButton.setIconSize(QSize(32, 32))
+        vlayoutIII.addWidget(self.calamaresButton)
 
-        self.getInvolvedButton = QPushButton()
-        self.getInvolvedButton.setFixedWidth(160)
-        self.getInvolvedButton.setCursor(Qt.PointingHandCursor)
-        self.getInvolvedButton.setText(self.tr("Join Us"))
-        self.getInvolvedButton.setIcon(QIcon(":/images/joinus.svg"))
-        self.getInvolvedButton.setIconSize(QSize(32, 32))
-        vlayoutIII.addWidget(self.getInvolvedButton)
+        self.joinUsButton = QPushButton()
+        self.joinUsButton.setFixedWidth(160)
+        self.joinUsButton.setCursor(Qt.PointingHandCursor)
+        self.joinUsButton.setText(self.tr("Join Us"))
+        self.joinUsButton.setIcon(QIcon(":/images/joinus.svg"))
+        self.joinUsButton.setIconSize(QSize(32, 32))
+        vlayoutIII.addWidget(self.joinUsButton)
 
         self.donateButton = QPushButton()
         self.donateButton.setFixedWidth(160)
@@ -289,18 +289,18 @@ class welcomeui(QWidget):
         self.footerWidget.layout().addItem(
             QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
 
-        self.openCheckBox = QCheckBox()
-        self.openCheckBox.setChecked(
+        self.startupCheckBox = QCheckBox()
+        self.startupCheckBox.setChecked(
             os.path.exists(os.path.join(os.environ["HOME"],
                                         ".config",
                                         "autostart",
                                         "pisilinux-welcome.desktop")))
-        font = self.openCheckBox.font()
+        font = self.startupCheckBox.font()
         font.setBold(True)
-        self.openCheckBox.setFont(font)
-        self.openCheckBox.setText(self.tr("Show on startup"))
-        self.openCheckBox.setStyleSheet("color: white;")
-        self.footerWidget.layout().addWidget(self.openCheckBox)
+        self.startupCheckBox.setFont(font)
+        self.startupCheckBox.setText(self.tr("Show on startup"))
+        self.startupCheckBox.setStyleSheet("color: white;")
+        self.footerWidget.layout().addWidget(self.startupCheckBox)
 
         self.facebookButton.clicked.connect(self.facebookPage)
         self.twitterButton.clicked.connect(self.twitterPage)
@@ -309,32 +309,32 @@ class welcomeui(QWidget):
         self.githubButton.clicked.connect(self.githubPage)
         self.slackButton.clicked.connect(self.slackPage)
 
-        self.releaseButton.clicked.connect(self.releaseNote)
+        self.releaseNotesButton.clicked.connect(self.releaseNotes)
         self.wikiButton.clicked.connect(self.wikiPage)
         self.forumButton.clicked.connect(self.forumPage)
         self.chatButton.clicked.connect(self.chatPages)
-        self.getInvolvedButton.clicked.connect(self.involvedPage)
+        self.joinUsButton.clicked.connect(self.joinUsPage)
         self.donateButton.clicked.connect(self.donatePage)
-        self.openCheckBox.clicked.connect(self.openState)
-        self.bugsButton.clicked.connect(self.issuePage)
+        self.startupCheckBox.clicked.connect(self.startupState)
+        self.bugsButton.clicked.connect(self.issuesPage)
 
     def setSystem(self, type):
         if type == "live":
-            self.installDocButton.clicked.connect(self.installDoc)
+            self.installationDocButton.clicked.connect(self.installationDocument)
 
             # TODO: Also for YALI
-            self.useKalamarButton.clicked.connect(self.calamaresExec)
+            self.calamaresButton.clicked.connect(self.calamaresExec)
 
         else:
-            self.installDocButton.setText(self.tr("Pisi Guide"))
-            self.installDocButton.clicked.connect(self.pisiDoc)
+            self.installationDocButton.setText(self.tr("Pisi Guide"))
+            self.installationDocButton.clicked.connect(self.pisiDocument)
 
-            self.installLabel.setText(self.tr("Project"))
+            self.installationHeader.setText(self.tr("Project"))
 
             # TODO: Also for YALI
-            self.useKalamarButton.setText(self.tr("Start Kaptan"))
-            self.useKalamarButton.setIcon(QIcon(":/images/kaptan.svg"))
-            self.useKalamarButton.clicked.connect(self.kaptanExec)
+            self.calamaresButton.setText(self.tr("Start Kaptan"))
+            self.calamaresButton.setIcon(QIcon(":/images/kaptan.svg"))
+            self.calamaresButton.clicked.connect(self.kaptanExec)
 
             self.noteLabel.hide()
             self.contentWidget.layout().addItem(
@@ -360,17 +360,17 @@ class welcomeui(QWidget):
         QDesktopServices.openUrl(QUrl("http://pisi.slack.com/"))
 
     # TODO: Also for YALI
-    def installDoc(self):
+    def installationDocument(self):
         QProcess.startDetached(
             "xdg-open\
             /usr/share/welcome/data/pisi-kurulum-belgesi-calamares.pdf")
 
-    def pisiDoc(self):
+    def pisiDocument(self):
         QProcess.startDetached(
             "xdg-open\
             /usr/share/welcome/data/pisi-kullanimi.pdf")
 
-    def releaseNote(self):
+    def releaseNotes(self):
         pass
 
     def wikiPage(self):
@@ -389,7 +389,7 @@ class welcomeui(QWidget):
     def kaptanExec(self):
         QProcess.startDetached("kaptan &")
 
-    def involvedPage(self):
+    def joinUsPage(self):
         QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/iletisim/"))
 
     def donatePage(self):
@@ -397,12 +397,12 @@ class welcomeui(QWidget):
             QUrl("https://www.paypal.com/cgi-bin/webscr\
             ?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
 
-    def issuePage(self):
+    def issuesPage(self):
         QDesktopServices.openUrl(
             QUrl("https://github.com/pisilinux/main/issues/new"))
 
-    def openState(self):
-        if self.openCheckBox.isChecked():
+    def startupState(self):
+        if self.startupCheckBox.isChecked():
             try:
                 shutil.copy("/usr/share/welcome/data/pisilinux-welcome.desktop",
                             os.path.join(os.environ["HOME"],
