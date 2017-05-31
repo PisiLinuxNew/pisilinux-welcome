@@ -24,5 +24,7 @@ Instagram icon designed by Pixel Buddha (nfo at pixelbuddha dot net) from Flatic
 
 Slack icon designed by creatiVe5 (http://creative5.deviantart.com/). (**License:** Freeware non-commercial use)
 
+Wikipedia icon designed by SimpleIcon (http://simpleicon.com/) from Flaticon. (**License:** [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/))
+
 # To do
 See open issues (https://github.com/PisiLinuxNew/pisilinux-welcome/issues).

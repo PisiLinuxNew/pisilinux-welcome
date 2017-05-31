@@ -139,7 +139,7 @@ class welcomeui(QWidget):
         self.wikiButton.setFixedWidth(160)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
         self.wikiButton.setText(self.tr("Pisi GNU/Linux Wiki"))
-        self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
+        self.wikiButton.setIcon(QIcon(":/images/wikipedia-logo.svg"))
         self.wikiButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.wikiButton)
 
