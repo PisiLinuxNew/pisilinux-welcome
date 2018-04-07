@@ -69,8 +69,8 @@ Wij als Pisi Linux-ontwikkelaars, we hopen dat u hebt veel plezier met Pisi Linu
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="195"/>
-        <source>Donate</source>
-        <translation>Donatie</translation>
+        <source>Ev</source>
+        <translation>Hjemmeside</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="182"/>

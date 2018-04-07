@@ -69,8 +69,8 @@ En tant que développeurs Pisi Linux, nous espérons que vous apprécierez Pisi 
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="195"/>
-        <source>Donate</source>
-        <translation>Faire un don</translation>
+        <source>Ev</source>
+        <translation>Page d'accueil</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="182"/>

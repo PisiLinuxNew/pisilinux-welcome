@@ -192,8 +192,8 @@ class WelcomeUi(QWidget):
         self.donateButton = QPushButton()
         self.donateButton.setFixedWidth(150)
         self.donateButton.setCursor(Qt.PointingHandCursor)
-        self.donateButton.setText(self.tr("Donate"))
-        self.donateButton.setIcon(QIcon(":/images/donate.svg"))
+        self.donateButton.setText(self.tr("Ev"))
+        self.donateButton.setIcon(QIcon(":/images/ev.svg"))
         self.donateButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.donateButton)
 
@@ -304,20 +304,19 @@ class WelcomeUi(QWidget):
         QDesktopServices.openUrl(QUrl("https://github.com/pisilinux"))
 
     def installedDoc(self):
-        QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
+        QDesktopServices.openUrl(QUrl("https://pisilinux.org/wiki/icerik/53-kurulum.html"))
 
     def releaseNote(self):
-        pass
+        QDesktopServices.openUrl(QUrl("/usr/share/welcome/data/media-content/index.html"))
 
     def wikiPage(self):
-        QDesktopServices.openUrl(QUrl("http://wiki.pisilinux.org"))
+        QDesktopServices.openUrl(QUrl("https://pisilinux.org/wiki"))
 
     def forumPage(self):
-        QDesktopServices.openUrl(QUrl("http://forum.pisilinux.org"))
+        QDesktopServices.openUrl(QUrl("https://pisilinux.org/forum"))
 
     def chatPages(self):
         QDesktopServices.openUrl(QUrl("http://pisi.slack.com"))
-        QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/irc-2/"))
 
     def calamaresExec(self):
         QProcess.startDetached("sudo LC_ALL=en_US calamares &")
@@ -326,10 +325,10 @@ class WelcomeUi(QWidget):
         QProcess.startDetached("kaptan &")
 
     def involvedPage(self):
-        QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/iletisim/"))
+        QDesktopServices.openUrl(QUrl("https://www.pisilinux.org/iletisim/"))
 
     def donatePage(self):
-        QDesktopServices.openUrl(QUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
+        QDesktopServices.openUrl(QUrl("https://pisilinux.org"))
 
     def issuePage(self):
         QDesktopServices.openUrl(QUrl("https://github.com/pisilinux/main/issues/new"))

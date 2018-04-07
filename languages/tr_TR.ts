@@ -68,8 +68,8 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="195"/>
-        <source>Donate</source>
-        <translation>Bağış Yapın</translation>
+        <source>Ev</source>
+        <translation>Anasayfa</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="182"/>

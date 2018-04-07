@@ -69,8 +69,8 @@ As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following link
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="195"/>
-        <source>Donate</source>
-        <translation>Donate</translation>
+        <source>Ev</source>
+        <translation>Homepage</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="182"/>
