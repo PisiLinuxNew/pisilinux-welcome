@@ -18,4 +18,5 @@
 #  MA 02110-1301, USA.
 #
 #
-from .welcomeui import WelcomeUi
+
+from .welcomeui import welcomeui

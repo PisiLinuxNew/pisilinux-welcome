@@ -34,34 +34,17 @@ system('pyrcc5 welcome.qrc -o welcome/resource.py')
 
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
-         ('/usr/share/welcome/data/media-content', ["data/media-content/logo.png"]),
-         ('/usr/share/welcome/data/media-content', ["data/media-content/index.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-de.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-en.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-es.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-fr.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-hr.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-hu.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-it.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-nl.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-ru.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-sv.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-tr.html"]),
-         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-ua.html"]),
-         ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
-         ('/usr/share/welcome/languages', langs)]
 
 setup(
-    name = "pisilinux-welcome",
-    scripts = ["pisilinux-welcome"],
-    packages = find_packages(),
-    version = "1.0",
-    license = "GPLv3",
-    description = "Pisi GNU/Linux welcome application",
-    author = "Metehan Özbek",
-    author_email = "mthnzbk@gmail.com",
-    url = "https://github.com/PisiLinuxNew/pisilinux-welcome",
-    keywords = ["PyQt5"],
-    data_files = datas
+    name="pisilinux-welcome",
+    scripts=["pisilinux-welcome"],
+    packages=find_packages(),
+    version="1.0",
+    license="GPLv3",
+    description="Pisi GNU/Linux welcome application",
+    author="Metehan Özbek",
+    author_email="mthnzbk@gmail.com",
+    url="https://github.com/PisiLinuxNew/pisilinux-welcome",
+    keywords=["PyQt5"],
+    data_files=datas
 )
-

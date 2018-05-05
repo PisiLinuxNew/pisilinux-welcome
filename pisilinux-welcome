@@ -22,9 +22,9 @@
 
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import QTranslator, QLocale
-from welcome import WelcomeUi, resource
-import sys, os
-
+from welcome import welcomeui, resource
+import sys
+import os
 
 
 def main():
@@ -35,7 +35,7 @@ def main():
     translator.load("/usr/share/welcome/languages/{}.qm".format(locale))
     app.installTranslator(translator)
 
-    window = WelcomeUi()
+    window = welcomeui()
     window.show()
 
     if os.environ["HOME"].split("/")[-1] == "pisilive":
