@@ -73,11 +73,6 @@ Pisi GNU/Linux geliştiricileri olarak Pisi GNU/Linux&apos;ı kullanmaktan zevk 
         <translation>Bize Katılın</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="212"/>
-        <source>Donate</source>
-        <translation>Bağış Yapın</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="226"/>
         <source>Note: The password is &quot;live&quot;.</source>
         <translation>Not: Şifre &quot;live&quot;dır.</translation>

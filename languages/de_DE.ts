@@ -73,11 +73,6 @@ Wir als Pisi GNU/Linux Entwickler hoffen Sie genießen es Pisi GNU/Linux zu benu
         <translation>Treffen Sie uns</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="212"/>
-        <source>Donate</source>
-        <translation>Spenden</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="226"/>
         <source>Note: The password is &quot;live&quot;.</source>
         <translation>Das Passwort is &quot;live&quot;.</translation>

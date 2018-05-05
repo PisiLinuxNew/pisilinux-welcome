@@ -209,8 +209,8 @@ class welcomeui(QWidget):
         self.donateButton = QPushButton()
         self.donateButton.setFixedWidth(160)
         self.donateButton.setCursor(Qt.PointingHandCursor)
-        self.donateButton.setText(self.tr("Donate"))
-        self.donateButton.setIcon(QIcon(":/images/donate.svg"))
+        self.donateButton.setText(self.tr("Ev"))
+        self.donateButton.setIcon(QIcon(":/images/ev.svg"))
         self.donateButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.donateButton)
 
@@ -356,28 +356,11 @@ class welcomeui(QWidget):
     def githubPage(self):
         QDesktopServices.openUrl(QUrl("https://github.com/pisilinux"))
 
-    def slackPage(self):
-        QDesktopServices.openUrl(QUrl("http://pisi.slack.com/"))
-
-    # TODO: Also for YALI
-    def installationDocument(self):
-        QProcess.startDetached(
-            "xdg-open\
-            /usr/share/welcome/data/pisi-kurulum-belgesi-calamares.pdf")
-
-    def pisiDocument(self):
-        QProcess.startDetached(
-            "xdg-open\
-            /usr/share/welcome/data/pisi-kullanimi.pdf")
-
-    def releaseNotes(self):
-        pass
-
     def wikiPage(self):
-        QDesktopServices.openUrl(QUrl("http://wiki.pisilinux.org"))
+        QDesktopServices.openUrl(QUrl("https://pisilinux.org/wiki"))
 
     def forumPage(self):
-        QDesktopServices.openUrl(QUrl("http://forum.pisilinux.org"))
+        QDesktopServices.openUrl(QUrl("https://pisilinux.org/forum"))
 
     def chatPages(self):
         QDesktopServices.openUrl(QUrl("http://pisi.slack.com"))
@@ -388,14 +371,6 @@ class welcomeui(QWidget):
 
     def kaptanExec(self):
         QProcess.startDetached("kaptan &")
-
-    def joinUsPage(self):
-        QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/iletisim/"))
-
-    def donatePage(self):
-        QDesktopServices.openUrl(
-            QUrl("https://www.paypal.com/cgi-bin/webscr\
-            ?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
 
     def issuesPage(self):
         QDesktopServices.openUrl(
