@@ -26,7 +26,9 @@ from os import listdir, system
 langs = []
 for file in listdir('languages'):
     if file.endswith('ts'):
-        system('lrelease-qt5 languages/{}'.format(file))
+        #Temporary bindir to avoid qt4 conflicts
+        #system('lrelease-qt5 languages/{}'.format(file))
+        system('lrelease languages/{}'.format(file))
         langs.append(('languages/{}'.format(file)).replace('.ts', '.qm'))
 
 
