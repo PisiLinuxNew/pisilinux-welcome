@@ -307,7 +307,6 @@ class welcomeui(QWidget):
         self.googleButton.clicked.connect(self.googlePage)
         self.instagramButton.clicked.connect(self.instagramPage)
         self.githubButton.clicked.connect(self.githubPage)
-        self.slackButton.clicked.connect(self.slackPage)
 
         self.releaseNotesButton.clicked.connect(self.releaseNotes)
         self.wikiButton.clicked.connect(self.wikiPage)
@@ -327,7 +326,7 @@ class welcomeui(QWidget):
 
         else:
             self.installationDocButton.setText(self.tr("Pisi Guide"))
-            self.installationDocButton.clicked.connect(self.pisiDocument)
+            self.installationDocButton.clicked.connect(self.installationDocument)
 
             self.installationHeader.setText(self.tr("Project"))
 
@@ -356,6 +355,12 @@ class welcomeui(QWidget):
     def githubPage(self):
         QDesktopServices.openUrl(QUrl("https://github.com/pisilinux"))
 
+    def installationDocument(self):
+        QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
+
+    def releaseNotes(self):
+        QDesktopServices.openUrl(QUrl("/usr/share/welcome/data/media-content/index.html"))
+
     def wikiPage(self):
         QDesktopServices.openUrl(QUrl("https://pisilinux.org/wiki"))
 
@@ -364,6 +369,13 @@ class welcomeui(QWidget):
 
     def chatPages(self):
         QDesktopServices.openUrl(QUrl("http://pisi.slack.com"))
+
+    def joinUsPage(self):
+        QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/iletisim/"))
+
+    def donatePage(self):
+        QDesktopServices.openUrl(
+            QUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
 
     # TODO: Also for YALI
     def calamaresExec(self):
