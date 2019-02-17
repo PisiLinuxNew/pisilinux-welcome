@@ -18,6 +18,7 @@
 #  MA 02110-1301, USA.
 #
 #
+import webbrowser
 
 from PyQt5.QtWidgets import (QWidget, QHBoxLayout, QVBoxLayout, QPushButton,
                              QLabel, QSpacerItem, QSizePolicy, QCheckBox,
@@ -313,7 +314,7 @@ class welcomeui(QWidget):
         self.forumButton.clicked.connect(self.forumPage)
         self.chatButton.clicked.connect(self.chatPages)
         self.joinUsButton.clicked.connect(self.joinUsPage)
-        self.donateButton.clicked.connect(self.donatePage)
+        self.donateButton.clicked.connect(self.homePage)
         self.startupCheckBox.clicked.connect(self.startupState)
         self.bugsButton.clicked.connect(self.issuesPage)
 
@@ -339,43 +340,44 @@ class welcomeui(QWidget):
             self.contentWidget.layout().addItem(
                 QSpacerItem(20, 50, QSizePolicy.Expanding, QSizePolicy.Minimum))
 
+    def open_url(self, url):
+        webbrowser.get('firefox').open(url)
+
     def facebookPage(self):
-        QDesktopServices.openUrl(QUrl("https://www.facebook.com/Pisilinux/"))
+        self.open_url("https://www.facebook.com/Pisilinux/")
 
     def twitterPage(self):
-        QDesktopServices.openUrl(QUrl("https://twitter.com/pisilinux"))
+        self.open_url("https://twitter.com/pisilinux")
 
     def googlePage(self):
-        QDesktopServices.openUrl(
-            QUrl("https://plus.google.com/communities/113565681602860915332"))
+        self.open_url("https://plus.google.com/communities/113565681602860915332")
 
     def instagramPage(self):
-        QDesktopServices.openUrl(QUrl("https://www.instagram.com/pisilinux/"))
+        self.open_url("https://www.instagram.com/pisilinux/")
 
     def githubPage(self):
-        QDesktopServices.openUrl(QUrl("https://github.com/pisilinux"))
+        self.open_url("https://github.com/pisilinux")
 
     def installationDocument(self):
-        QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
+        self.open_url("https://pisilinux.org/wiki/cont/53-pisi-linux-kurulum.html")
 
     def releaseNotes(self):
-        QDesktopServices.openUrl(QUrl("/usr/share/welcome/data/media-content/index.html"))
+        self.open_url("/usr/share/welcome/data/media-content/index.html")
 
     def wikiPage(self):
-        QDesktopServices.openUrl(QUrl("https://pisilinux.org/wiki"))
+        self.open_url("https://pisilinux.org/wiki")
 
     def forumPage(self):
-        QDesktopServices.openUrl(QUrl("https://pisilinux.org/forum"))
+        self.open_url("https://pisilinux.org/forum")
 
     def chatPages(self):
-        QDesktopServices.openUrl(QUrl("http://pisi.slack.com"))
+        self.open_url("https://gitter.im/Pisi-GNU-Linux/Lobby")
 
     def joinUsPage(self):
-        QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/iletisim/"))
+        self.open_url("http://www.pisilinux.org/iletisim/")
 
-    def donatePage(self):
-        QDesktopServices.openUrl(
-            QUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
+    def homePage(self):
+        self.open_url("http://www.pisilinux.org")
 
     # TODO: Also for YALI
     def calamaresExec(self):
@@ -385,8 +387,7 @@ class welcomeui(QWidget):
         QProcess.startDetached("kaptan &")
 
     def issuesPage(self):
-        QDesktopServices.openUrl(
-            QUrl("https://github.com/pisilinux/main/issues/new"))
+        self.open_url("https://github.com/pisilinux/main/issues/new")
 
     def startupState(self):
         if self.startupCheckBox.isChecked():
