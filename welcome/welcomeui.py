@@ -34,7 +34,7 @@ class welcomeui(QWidget):
         super().__init__()
         self.setWindowTitle(self.tr("Welcome Pisi GNU/Linux"))
         self.setFixedSize(700, 475)
-        self.setWindowIcon(QIcon("images/pisilinux-welcome.svg"))
+        self.setWindowIcon(QIcon(":/images/pisilinux-welcome.svg"))
         self.setLayout(QVBoxLayout())
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)
@@ -49,20 +49,20 @@ class welcomeui(QWidget):
         self.headerWidget = QWidget()
         self.headerWidget.setFixedHeight(80)
         self.headerWidget.setLayout(QHBoxLayout())
-        self.headerWidget.setStyleSheet("background-image:url(images/background.png);")
+        self.headerWidget.setStyleSheet("background-image:url(:/images/background.png);")
         self.layout().addWidget(self.headerWidget)
 
         self.pisiWhiteLogo = QLabel()
         self.pisiWhiteLogo.setFixedSize(64, 64)
         self.pisiWhiteLogo.setScaledContents(True)
         self.pisiWhiteLogo.setPixmap(
-            QIcon("images/pisi-white.svg").pixmap(self.pisiWhiteLogo.size()))
+            QIcon(":/images/pisi-white.svg").pixmap(self.pisiWhiteLogo.size()))
         self.headerWidget.layout().addWidget(self.pisiWhiteLogo)
 
         self.pisiTextLabel = QLabel()
         self.pisiTextLabel.setFixedSize(157, 48)
         self.pisiTextLabel.setScaledContents(True)
-        self.pisiTextLabel.setPixmap(QPixmap("images/pisi-text.png"))
+        self.pisiTextLabel.setPixmap(QPixmap(":/images/pisi-text.png"))
         self.headerWidget.layout().addWidget(self.pisiTextLabel)
 
         self.headerWidget.layout().addItem(
@@ -122,7 +122,7 @@ class welcomeui(QWidget):
         self.installationDocButton.setFixedWidth(160)
         self.installationDocButton.setCursor(Qt.PointingHandCursor)
         self.installationDocButton.setText(self.tr("Installation Guide"))
-        self.installationDocButton.setIcon(QIcon(os.path.join('images', 'guide.svg')))
+        self.installationDocButton.setIcon(QIcon(':/images/guide.svg'))
         self.installationDocButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.installationDocButton)
 
@@ -130,7 +130,7 @@ class welcomeui(QWidget):
         self.releaseNotesButton.setFixedWidth(160)
         self.releaseNotesButton.setCursor(Qt.PointingHandCursor)
         self.releaseNotesButton.setText(self.tr("Release Notes"))
-        self.releaseNotesButton.setIcon(QIcon(os.path.join('images', 'info.svg')))
+        self.releaseNotesButton.setIcon(QIcon(':/images/info.svg'))
         self.releaseNotesButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.releaseNotesButton)
 
@@ -138,7 +138,7 @@ class welcomeui(QWidget):
         self.wikiButton.setFixedWidth(160)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
         self.wikiButton.setText(self.tr("Pisi GNU/Linux Wiki"))
-        self.wikiButton.setIcon(QIcon(os.path.join('images', 'wikipedia-logo.svg')))
+        self.wikiButton.setIcon(QIcon(':/images/wikipedia-logo.svg'))
         self.wikiButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.wikiButton)
 
@@ -158,14 +158,14 @@ class welcomeui(QWidget):
         self.forumButton.setCursor(Qt.PointingHandCursor)
         self.forumButton.setText(self.tr("Forum"))
         self.forumButton.setIconSize(QSize(32, 32))
-        self.forumButton.setIcon(QIcon(os.path.join('images', 'forum.svg')))
+        self.forumButton.setIcon(QIcon(':/images/forum.svg'))
         vlayoutII.addWidget(self.forumButton)
 
         self.chatButton = QPushButton()
         self.chatButton.setFixedWidth(160)
         self.chatButton.setCursor(Qt.PointingHandCursor)
         self.chatButton.setText(self.tr("Chat Rooms"))
-        self.chatButton.setIcon(QIcon(os.path.join('images', 'chat.svg')))
+        self.chatButton.setIcon(QIcon(':/images/chat.svg'))
         self.chatButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.chatButton)
 
@@ -173,7 +173,7 @@ class welcomeui(QWidget):
         self.bugsButton.setFixedWidth(160)
         self.bugsButton.setCursor(Qt.PointingHandCursor)
         self.bugsButton.setText(self.tr("Bug Report"))
-        self.bugsButton.setIcon(QIcon(os.path.join('images', 'bug.svg')))
+        self.bugsButton.setIcon(QIcon(':/images/bug.svg'))
         self.bugsButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.bugsButton)
 
@@ -193,7 +193,7 @@ class welcomeui(QWidget):
         self.calamaresButton.setFixedWidth(160)
         self.calamaresButton.setCursor(Qt.PointingHandCursor)
         self.calamaresButton.setText(self.tr("Start Installation"))
-        self.calamaresButton.setIcon(QIcon(os.path.join('images', 'calamares.svg')))
+        self.calamaresButton.setIcon(QIcon(':/images/calamares.svg'))
         self.calamaresButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.calamaresButton)
 
@@ -201,7 +201,7 @@ class welcomeui(QWidget):
         self.joinUsButton.setFixedWidth(160)
         self.joinUsButton.setCursor(Qt.PointingHandCursor)
         self.joinUsButton.setText(self.tr("Join Us"))
-        self.joinUsButton.setIcon(QIcon(os.path.join('images', 'joinus.svg')))
+        self.joinUsButton.setIcon(QIcon(':/images/joinus.svg'))
         self.joinUsButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.joinUsButton)
 
@@ -209,7 +209,7 @@ class welcomeui(QWidget):
         self.donateButton.setFixedWidth(160)
         self.donateButton.setCursor(Qt.PointingHandCursor)
         self.donateButton.setText(self.tr("Ev"))
-        self.donateButton.setIcon(QIcon(os.path.join('images', 'ev.svg')))
+        self.donateButton.setIcon(QIcon(':/images/ev.svg'))
         self.donateButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.donateButton)
 
@@ -234,13 +234,13 @@ class welcomeui(QWidget):
         self.footerWidget.setFixedHeight(50)
         self.footerWidget.setLayout(QHBoxLayout())
         self.footerWidget.setStyleSheet(
-            "background-image: url(images/background.png);")
+            "background-image: url(:/images//background.png);")
         self.layout().addWidget(self.footerWidget)
 
         self.facebookButton = QPushButton()
         self.facebookButton.setFixedSize(36, 36)
         self.facebookButton.setIconSize(QSize(36, 36))
-        self.facebookButton.setIcon(QIcon(os.path.join('images', 'facebook.svg')))
+        self.facebookButton.setIcon(QIcon(':/images/facebook.svg'))
         self.facebookButton.setCursor(Qt.PointingHandCursor)
         self.facebookButton.setToolTip(self.tr("Facebook Page"))
         self.footerWidget.layout().addWidget(self.facebookButton)
@@ -248,7 +248,7 @@ class welcomeui(QWidget):
         self.twitterButton = QPushButton()
         self.twitterButton.setFixedSize(36, 36)
         self.twitterButton.setIconSize(QSize(36, 36))
-        self.twitterButton.setIcon(QIcon(os.path.join('images', 'twitter.svg')))
+        self.twitterButton.setIcon(QIcon(':/images/twitter.svg'))
         self.twitterButton.setCursor(Qt.PointingHandCursor)
         self.twitterButton.setToolTip(self.tr("Twitter Page"))
         self.footerWidget.layout().addWidget(self.twitterButton)
@@ -256,7 +256,7 @@ class welcomeui(QWidget):
         self.googleButton = QPushButton()
         self.googleButton.setFixedSize(36, 36)
         self.googleButton.setIconSize(QSize(36, 36))
-        self.googleButton.setIcon(QIcon(os.path.join('images', 'google-plus.svg')))
+        self.googleButton.setIcon(QIcon(':/images/google-plus.svg'))
         self.googleButton.setCursor(Qt.PointingHandCursor)
         self.googleButton.setToolTip(self.tr("Google+ Page"))
         self.footerWidget.layout().addWidget(self.googleButton)
@@ -264,7 +264,7 @@ class welcomeui(QWidget):
         self.instagramButton = QPushButton()
         self.instagramButton.setFixedSize(36, 36)
         self.instagramButton.setIconSize(QSize(36, 36))
-        self.instagramButton.setIcon(QIcon(os.path.join('images', 'instagram.svg')))
+        self.instagramButton.setIcon(QIcon(':/images/instagram.svg'))
         self.instagramButton.setCursor(Qt.PointingHandCursor)
         self.instagramButton.setToolTip(self.tr("Instagram Page"))
         self.footerWidget.layout().addWidget(self.instagramButton)
@@ -272,7 +272,7 @@ class welcomeui(QWidget):
         self.githubButton = QPushButton()
         self.githubButton.setFixedSize(36, 36)
         self.githubButton.setIconSize(QSize(36, 36))
-        self.githubButton.setIcon(QIcon(os.path.join('images', 'github-logo.svg')))
+        self.githubButton.setIcon(QIcon(':/images/github-logo.svg'))
         self.githubButton.setCursor(Qt.PointingHandCursor)
         self.githubButton.setToolTip(self.tr("GitHub Page"))
         self.footerWidget.layout().addWidget(self.githubButton)
@@ -323,7 +323,7 @@ class welcomeui(QWidget):
 
             # TODO: Also for YALI
             self.calamaresButton.setText(self.tr("Start Kaptan"))
-            self.calamaresButton.setIcon(QIcon(os.path.join('images', 'kaptan.svg')))
+            self.calamaresButton.setIcon(QIcon(':/images/kaptan.svg'))
             self.calamaresButton.clicked.connect(self.kaptanExec)
 
             self.noteLabel.hide()
