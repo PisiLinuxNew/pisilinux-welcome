@@ -37,6 +37,19 @@ system('pyrcc5 welcome.qrc -o welcome/resource.py')
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
          ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
+         ('/usr/share/welcome/data/media-content', ["data/media-content/index.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-de.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-en.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-es.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-fr.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-hr.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-hu.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-it.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-nl.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-ru.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-sv.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-tr.html"]),
+         ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-ua.html"]),
          ('/usr/share/welcome/languages', langs)]
 
 setup(
