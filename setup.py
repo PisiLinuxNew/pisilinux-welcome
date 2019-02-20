@@ -37,6 +37,7 @@ system('pyrcc5 welcome.qrc -o welcome/resource.py')
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
          ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
+         ('/usr/share/welcome/data/media-content', ["data/media-content/logo.png"]),
          ('/usr/share/welcome/data/media-content', ["data/media-content/index.html"]),
          ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-de.html"]),
          ('/usr/share/welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-en.html"]),
