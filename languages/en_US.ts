@@ -48,16 +48,6 @@ As Pisi GNU/Linux developers, we hope you enjoy using Pisi Linux. The following 
         <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="165"/>
-        <source>Chat Rooms</source>
-        <translation>Chat Rooms</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="173"/>
-        <source>Bug Report</source>
-        <translation>Bug Report</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="186"/>
         <source>Installation</source>
         <translation>Installation</translation>
@@ -94,38 +84,68 @@ As Pisi GNU/Linux developers, we hope you enjoy using Pisi Linux. The following 
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="259"/>
-        <source>Google+ Page</source>
-        <translation>Google+ Page</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="267"/>
         <source>Instagram Page</source>
         <translation>Instagram Page</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="275"/>
-        <source>GitHub Page</source>
-        <translation>GitHub Page</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="290"/>
+        <location filename="../welcome/welcomeui.py" line="306"/>
         <source>Show on startup</source>
         <translation>Show on startup</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="317"/>
+        <location filename="../welcome/welcomeui.py" line="335"/>
         <source>Pisi Guide</source>
         <translation>Pisi Guide</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="320"/>
+        <location filename="../welcome/welcomeui.py" line="338"/>
         <source>Project</source>
         <translation>Project</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="323"/>
+        <location filename="../welcome/welcomeui.py" line="341"/>
         <source>Start Kaptan</source>
         <translation>Start Kaptan</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="165"/>
+        <source>PisiLinux Telegram Chat</source>
+        <translation type="obsolete">PisiLinux Telegram Chat</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="173"/>
+        <source>Pisi Linux Main Bugs</source>
+        <translation type="obsolete">Pisi Linux Main Bugs</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="275"/>
+        <source>Pisi Linux Repositories GitHub Page</source>
+        <translation>Pisi Linux Repositories GitHub Page</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="283"/>
+        <source>Pisi Linux New GitHub Page</source>
+        <translation>Pisi Linux New GitHub Page</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="291"/>
+        <source>forYali GitHub Page</source>
+        <translation>forYali GitHub Page</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="267"/>
+        <source>YouTube Page</source>
+        <translation>YouTube Page</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="165"/>
+        <source>PisiLinux Telegram</source>
+        <translation>PisiLinux Telegram</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="173"/>
+        <source>Pisi Linux Bugs</source>
+        <translation>Pisi Linux Bugs</translation>
     </message>
 </context>
 </TS>
