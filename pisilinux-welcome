@@ -47,7 +47,6 @@ def main():
 
     if os.environ["HOME"].split("/")[-1] == "pisilive":
         window.setSystem("live")
-
     else:
         window.setSystem("installed")
 
