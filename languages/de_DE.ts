@@ -3,18 +3,9 @@
 <context>
     <name>welcomeui</name>
     <message>
-        <location filename="../welcome/welcomeui.py" line="34"/>
+        <location filename="../welcome/welcomeui.py" line="33"/>
         <source>Welcome Pisi Linux</source>
-        <translation type="obsolete">Willkommen bei Pisi Linux</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="90"/>
-        <source>Welcome to Pisi Linux! Thank you for joining our community!
-
-As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation type="obsolete">Willkommen bei Pisi Linux! Danke für Ihr Interesse an unserer Community
-
-Wir als Pisi Linux Entwickler hoffen Sie genießen es Pisi Linux zu benutzen. Die nachfolgenden Links führen Sie auf Pisi Linux Seiten und geben Ihnen eine kleine Hilfestellung. Bitte zögern Sie nicht uns Ihre Erfahrungen oder Fehler die Sie entdeckt haben mitzuteilen. Auch für Anregungen von Ihnen sind wir sehr dankbar.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="116"/>
@@ -32,9 +23,9 @@ Wir als Pisi Linux Entwickler hoffen Sie genießen es Pisi Linux zu benutzen. Di
         <translation type="unfinished">Versionshinweise</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="141"/>
+        <location filename="../welcome/welcomeui.py" line="138"/>
         <source>Pisi Linux Wiki</source>
-        <translation type="obsolete">Pisi Linux Wiki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="151"/>
@@ -122,23 +113,6 @@ Wir als Pisi Linux Entwickler hoffen Sie genießen es Pisi Linux zu benutzen. Di
         <translation type="unfinished">Starte Kaptan</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="33"/>
-        <source>Welcome Pisi Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="87"/>
-        <source>Welcome to Pisi Linux! Thank you for joining our community!
-
-As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="138"/>
-        <source>Pisi Linux Wiki</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="317"/>
         <source>Pisi Guide</source>
         <translation type="unfinished"></translation>
@@ -146,6 +120,13 @@ As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following link
     <message>
         <location filename="../welcome/welcomeui.py" line="209"/>
         <source>Home</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="87"/>
+        <source>Welcome to Pisi Linux! Thank you for joining our community!
+
+As Pisi GNU/Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -4,18 +4,9 @@
 <context>
     <name>welcomeui</name>
     <message>
-        <location filename="../welcome/welcomeui.py" line="34"/>
+        <location filename="../welcome/welcomeui.py" line="33"/>
         <source>Welcome Pisi Linux</source>
         <translation>Pisi Linux&apos;a Hoş Geldiniz</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="90"/>
-        <source>Welcome to Pisi Linux! Thank you for joining our community!
-
-As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation>Pisi Linux&apos;a Hoş Geldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
-
-Pisi Linux geliştiricileri olarak Pisi Linux&apos;ı kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi Linux kullanmanıza kılavuzluk edecektir. Lütfen deneyimlerinizi, önerilerinizi ve karşılaştığınız hatâları bize bildirmekten çekinmeyiniz.</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="116"/>
@@ -33,7 +24,7 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;ı kullanmaktan zevk almanız
         <translation>Sürüm Notları</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="141"/>
+        <location filename="../welcome/welcomeui.py" line="138"/>
         <source>Pisi Linux Wiki</source>
         <translation>Pisi Linux Wiki</translation>
     </message>
@@ -103,11 +94,6 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;ı kullanmaktan zevk almanız
         <translation>GitHub Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="286"/>
-        <source>Slack Page</source>
-        <translation>Slack Sayfası</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="290"/>
         <source>Show on startup</source>
         <translation>Sistem açılışında göster</translation>
@@ -131,6 +117,15 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;ı kullanmaktan zevk almanız
         <location filename="../welcome/welcomeui.py" line="209"/>
         <source>Home</source>
         <translation></translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="87"/>
+        <source>Welcome to Pisi Linux! Thank you for joining our community!
+
+As Pisi GNU/Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
+        <translation>Pisi Linux&apos;a Hoş Geldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
+
+Pisi Linux geliştiricileri olarak Pisi Linux&apos;ı kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi Linux kullanmanıza kılavuzluk edecektir. Lütfen deneyimlerinizi, önerilerinizi ve karşılaştığınız hatâları bize bildirmekten çekinmeyiniz.</translation>
     </message>
 </context>
 </TS>
