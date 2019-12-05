@@ -18,13 +18,16 @@
 from setuptools import setup, find_packages
 from os import listdir, system
 
-
 langs = []
-for file in listdir('languages'):
-    if file.endswith('ts'):
-        system('lrelease languages/{}'.format(file))
-        langs.append(('languages/{}'.format(file)).replace('.ts', '.qm'))
+for file in listdir("languages"):
+    if file.endswith("ts"):
+        system("lrelease languages/{}".format(file))
+        langs.append(("languages/{}".format(file)).replace(".ts", ".qm"))
 
+release_notes = []
+for file in listdir("data/media-content/release-notes"):
+    if file.endswith(".html"):
+        langs.append(("data/media-content/release-notes/{}".format(file))
 
 system('pyrcc5 welcome.qrc -o welcome/resource.py')
 
@@ -33,18 +36,7 @@ datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
          ('/usr/share/pisilinux-welcome/data/media-content', ["data/media-content/logo.png"]),
          ('/usr/share/pisilinux-welcome/data/media-content', ["data/media-content/index.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-de.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-en.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-es.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-fr.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-hr.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-hu.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-it.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-nl.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-ru.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-sv.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-tr.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', ["data/media-content/release-notes/releasenotes-ua.html"]),
+         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', release_notes),
          ('/usr/share/pisilinux-welcome/languages', langs)]
 
 setup(
