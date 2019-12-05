@@ -16,7 +16,7 @@ After installation, you can run that in any directory:
 ## Artwork
 Fatih Kaya (trlinux41 at gmail dot com)
 
-Facebook, Twitter and Google+ icons designed by Freepik (http://www.freepik.com/) from Flaticon. (**License:** [Flaticon Basic License](http://file000.flaticon.com/downloads/license/license.pdf))
+Facebook, Twitter and YouTube icons designed by Freepik (http://www.freepik.com/) from Flaticon. (**License:** [Flaticon Basic License](http://file000.flaticon.com/downloads/license/license.pdf))
 
 GitHub icon designed by Dave Gandy (http://fontawesome.io/) and altered by Fatih Kaya. (**License:** [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/))
 

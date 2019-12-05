@@ -21,5 +21,6 @@
         <file>images/Slack.png</file>
         <file>images/twitter.svg</file>
         <file>images/wikipedia-logo.svg</file>
+        <file>images/youtube.svg</file>
     </qresource>
 </RCC>

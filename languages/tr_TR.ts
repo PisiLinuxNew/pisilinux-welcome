@@ -39,16 +39,6 @@
         <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="165"/>
-        <source>Chat Rooms</source>
-        <translation>Sohbet Odaları</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="173"/>
-        <source>Bug Report</source>
-        <translation>Hatâ Bildir</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="186"/>
         <source>Installation</source>
         <translation>Kurulum</translation>
@@ -80,36 +70,26 @@
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="259"/>
-        <source>Google+ Page</source>
-        <translation>Google+ Sayfası</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="267"/>
         <source>Instagram Page</source>
         <translation>Instagram Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="275"/>
-        <source>GitHub Page</source>
-        <translation>GitHub Sayfası</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="290"/>
+        <location filename="../welcome/welcomeui.py" line="306"/>
         <source>Show on startup</source>
         <translation>Sistem açılışında göster</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="317"/>
+        <location filename="../welcome/welcomeui.py" line="335"/>
         <source>Pisi Guide</source>
         <translation>Pisi Kılavuzu</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="320"/>
+        <location filename="../welcome/welcomeui.py" line="338"/>
         <source>Project</source>
         <translation>Proje</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="323"/>
+        <location filename="../welcome/welcomeui.py" line="341"/>
         <source>Start Kaptan</source>
         <translation>Kaptan&apos;ı Başlat</translation>
     </message>
@@ -125,7 +105,47 @@
 As Pisi GNU/Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
         <translation>Pisi Linux&apos;a Hoş Geldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
 
-Pisi Linux geliştiricileri olarak Pisi Linux&apos;ı kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi Linux kullanmanıza kılavuzluk edecektir. Lütfen deneyimlerinizi, önerilerinizi ve karşılaştığınız hatâları bize bildirmekten çekinmeyiniz.</translation>
+Pisi Linux geliştiricileri olarak Pisi Linux&apos;ı kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi Linux kullanmanıza kılavuzluk edecektir. Lütfen deneyimlerinizi, önerilerinizi ve karşılaştığınız hataları bize bildirmekten çekinmeyiniz.</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="165"/>
+        <source>PisiLinux Telegram Chat</source>
+        <translation type="obsolete">PisiLinux Telegram Konuşma Yeri</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="173"/>
+        <source>Pisi Linux Main Bugs</source>
+        <translation type="obsolete">Pisi Linux Ana Hatalar</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="275"/>
+        <source>Pisi Linux Repositories GitHub Page</source>
+        <translation>Pisi Linux Repositories GitHub Sayfası</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="283"/>
+        <source>Pisi Linux New GitHub Page</source>
+        <translation>Pisi Linux New GitHub Sayfası</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="291"/>
+        <source>forYali GitHub Page</source>
+        <translation>forYali GitHub Sayfası</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="267"/>
+        <source>YouTube Page</source>
+        <translation>YouTube Sayfası</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="165"/>
+        <source>PisiLinux Telegram</source>
+        <translation>PisiLinux Telegram</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="173"/>
+        <source>Pisi Linux Bugs</source>
+        <translation>Pisi Linux Hataları</translation>
     </message>
 </context>
 </TS>

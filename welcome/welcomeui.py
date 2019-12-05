@@ -162,7 +162,7 @@ class welcomeui(QWidget):
         self.chatButton = QPushButton()
         self.chatButton.setFixedWidth(160)
         self.chatButton.setCursor(Qt.PointingHandCursor)
-        self.chatButton.setText(self.tr("Chat Rooms"))
+        self.chatButton.setText(self.tr("PisiLinux Telegram"))
         self.chatButton.setIcon(QIcon(':/images/chat.svg'))
         self.chatButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.chatButton)
@@ -170,7 +170,7 @@ class welcomeui(QWidget):
         self.bugsButton = QPushButton()
         self.bugsButton.setFixedWidth(160)
         self.bugsButton.setCursor(Qt.PointingHandCursor)
-        self.bugsButton.setText(self.tr("Bug Report"))
+        self.bugsButton.setText(self.tr("Pisi Linux Bugs"))
         self.bugsButton.setIcon(QIcon(':/images/bug.svg'))
         self.bugsButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.bugsButton)
@@ -251,14 +251,6 @@ class welcomeui(QWidget):
         self.twitterButton.setToolTip(self.tr("Twitter Page"))
         self.footerWidget.layout().addWidget(self.twitterButton)
 
-        self.googleButton = QPushButton()
-        self.googleButton.setFixedSize(36, 36)
-        self.googleButton.setIconSize(QSize(36, 36))
-        self.googleButton.setIcon(QIcon(':/images/google-plus.svg'))
-        self.googleButton.setCursor(Qt.PointingHandCursor)
-        self.googleButton.setToolTip(self.tr("Google+ Page"))
-        self.footerWidget.layout().addWidget(self.googleButton)
-
         self.instagramButton = QPushButton()
         self.instagramButton.setFixedSize(36, 36)
         self.instagramButton.setIconSize(QSize(36, 36))
@@ -267,13 +259,37 @@ class welcomeui(QWidget):
         self.instagramButton.setToolTip(self.tr("Instagram Page"))
         self.footerWidget.layout().addWidget(self.instagramButton)
 
+        self.youtubeButton = QPushButton()
+        self.youtubeButton.setFixedSize(36, 36)
+        self.youtubeButton.setIconSize(QSize(36, 36))
+        self.youtubeButton.setIcon(QIcon(':/images/youtube.svg'))
+        self.youtubeButton.setCursor(Qt.PointingHandCursor)
+        self.youtubeButton.setToolTip(self.tr("YouTube Page"))
+        self.footerWidget.layout().addWidget(self.youtubeButton)
+
         self.githubButton = QPushButton()
         self.githubButton.setFixedSize(36, 36)
         self.githubButton.setIconSize(QSize(36, 36))
         self.githubButton.setIcon(QIcon(':/images/github-logo.svg'))
         self.githubButton.setCursor(Qt.PointingHandCursor)
-        self.githubButton.setToolTip(self.tr("GitHub Page"))
+        self.githubButton.setToolTip(self.tr("Pisi Linux Repositories GitHub Page"))
         self.footerWidget.layout().addWidget(self.githubButton)
+
+        self.github2Button = QPushButton()
+        self.github2Button.setFixedSize(36, 36)
+        self.github2Button.setIconSize(QSize(36, 36))
+        self.github2Button.setIcon(QIcon(':/images/github-logo.svg'))
+        self.github2Button.setCursor(Qt.PointingHandCursor)
+        self.github2Button.setToolTip(self.tr("Pisi Linux New GitHub Page"))
+        self.footerWidget.layout().addWidget(self.github2Button)
+
+        self.github3Button = QPushButton()
+        self.github3Button.setFixedSize(36, 36)
+        self.github3Button.setIconSize(QSize(36, 36))
+        self.github3Button.setIcon(QIcon(':/images/github-logo.svg'))
+        self.github3Button.setCursor(Qt.PointingHandCursor)
+        self.github3Button.setToolTip(self.tr("forYali GitHub Page"))
+        self.footerWidget.layout().addWidget(self.github3Button)
 
         self.footerWidget.layout().addItem(
             QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
@@ -293,9 +309,11 @@ class welcomeui(QWidget):
 
         self.facebookButton.clicked.connect(self.facebookPage)
         self.twitterButton.clicked.connect(self.twitterPage)
-        self.googleButton.clicked.connect(self.googlePage)
         self.instagramButton.clicked.connect(self.instagramPage)
+        self.youtubeButton.clicked.connect(self.youtubePage)
         self.githubButton.clicked.connect(self.githubPage)
+        self.github2Button.clicked.connect(self.github2Page)
+        self.github3Button.clicked.connect(self.github3Page)
 
         self.releaseNotesButton.clicked.connect(self.releaseNotes)
         self.wikiButton.clicked.connect(self.wikiPage)
@@ -335,16 +353,22 @@ class welcomeui(QWidget):
         self.open_url("https://www.facebook.com/Pisilinux/")
 
     def twitterPage(self):
-        self.open_url("https://twitter.com/pisilinux")
-
-    def googlePage(self):
-        self.open_url("https://plus.google.com/communities/113565681602860915332")
+        self.open_url("https://twitter.com/pisi_linux")
 
     def instagramPage(self):
-        self.open_url("https://www.instagram.com/pisilinux/")
+        self.open_url("https://www.instagram.com/pisilinux_official/")
+
+    def youtubePage(self):
+        self.open_url("https://www.youtube.com/channel/UCLGSGLpxVE-vxzBuebBj3tA")
 
     def githubPage(self):
         self.open_url("https://github.com/pisilinux")
+
+    def github2Page(self):
+        self.open_url("https://github.com/PisiLinuxNew")
+
+    def github3Page(self):
+        self.open_url("https://github.com/forYali")
 
     def installationDocument(self):
         self.open_url("https://pisilinux.org/wiki/cont/53-pisi-linux-kurulum.html")
@@ -359,7 +383,7 @@ class welcomeui(QWidget):
         self.open_url("https://pisilinux.org/forum")
 
     def chatPages(self):
-        self.open_url("https://gitter.im/Pisi-GNU-Linux/Lobby")
+        self.open_url("https://t.me/joinchat/MAcpp0o6E4dAAoz090cDjA")
 
     def joinUsPage(self):
         self.open_url("http://www.pisilinux.org/iletisim/")

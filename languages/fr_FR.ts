@@ -40,12 +40,12 @@
     <message>
         <location filename="../welcome/welcomeui.py" line="165"/>
         <source>Chat Rooms</source>
-        <translation type="unfinished">Salles de discussion</translation>
+        <translation type="obsolete">Salles de discussion</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="173"/>
         <source>Bug Report</source>
-        <translation type="unfinished">Rapport d&apos;erreur</translation>
+        <translation type="obsolete">Rapport d&apos;erreur</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="186"/>
@@ -80,17 +80,17 @@
     <message>
         <location filename="../welcome/welcomeui.py" line="259"/>
         <source>Google+ Page</source>
-        <translation type="unfinished">La page Google+</translation>
+        <translation type="obsolete">La page Google+</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="267"/>
+        <location filename="../welcome/welcomeui.py" line="259"/>
         <source>Instagram Page</source>
         <translation type="unfinished">La page Instagram</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="275"/>
         <source>GitHub Page</source>
-        <translation type="unfinished">La page GitHub</translation>
+        <translation type="obsolete">La page GitHub</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="286"/>
@@ -98,22 +98,22 @@
         <translation type="obsolete">La page Slack</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="290"/>
+        <location filename="../welcome/welcomeui.py" line="306"/>
         <source>Show on startup</source>
         <translation type="unfinished">Montrer au démarrage</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="320"/>
+        <location filename="../welcome/welcomeui.py" line="338"/>
         <source>Project</source>
         <translation type="unfinished">Projet</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="323"/>
+        <location filename="../welcome/welcomeui.py" line="341"/>
         <source>Start Kaptan</source>
         <translation type="unfinished">Démarrer Kaptan</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="317"/>
+        <location filename="../welcome/welcomeui.py" line="335"/>
         <source>Pisi Guide</source>
         <translation type="unfinished"></translation>
     </message>
@@ -127,6 +127,36 @@
         <source>Welcome to Pisi Linux! Thank you for joining our community!
 
 As Pisi GNU/Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="275"/>
+        <source>Pisi Linux Repositories GitHub Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="283"/>
+        <source>Pisi Linux New GitHub Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="291"/>
+        <source>forYali GitHub Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="267"/>
+        <source>YouTube Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="165"/>
+        <source>PisiLinux Telegram</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="173"/>
+        <source>Pisi Linux Bugs</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
