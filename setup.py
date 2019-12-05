@@ -1,5 +1,4 @@
 #  Copyright 2016 Metehan Özbek <mthnzbk@gmail.com>
-#            2019 Erdem Ersoy <erdemersoy@erdemersoy.net>
 #
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
