@@ -91,3 +91,6 @@ ENV/
 .idea/
 .vscode/
 
+# Pisi Linux Welcome specific
+.qm
+welcome/resource.py
