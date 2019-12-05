@@ -45,7 +45,7 @@ setup(
     name="pisilinux-welcome",
     scripts=["pisilinux-welcome"],
     packages=find_packages(),
-    version="1.1",
+    version="1.0",
     license="GPLv3",
     description="Pisi Linux Welcome Application",
     author="Metehan Özbek",
