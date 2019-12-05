@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 #  Copyright 2016 Metehan Özbek <mthnzbk@gmail.com>
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -32,7 +30,7 @@ from PyQt5.QtWidgets import (QWidget, QHBoxLayout, QVBoxLayout, QPushButton,
 class welcomeui(QWidget):
     def __init__(self, parent=None):
         super().__init__()
-        self.setWindowTitle(self.tr("Welcome Pisi GNU/Linux"))
+        self.setWindowTitle(self.tr("Welcome Pisi Linux"))
         self.setFixedSize(700, 475)
         self.setWindowIcon(QIcon(":/images/pisilinux-welcome.svg"))
         self.setLayout(QVBoxLayout())
@@ -87,12 +85,12 @@ class welcomeui(QWidget):
 
         self.meetingLabel = QLabel()
         self.meetingLabel.setText(
-            self.tr("Welcome to Pisi GNU/Linux!"
+            self.tr("Welcome to Pisi Linux!"
                     " Thank you for joining our community!\n\n"
                     "As Pisi GNU/Linux developers,"
-                    " we hope you enjoy using Pisi GNU/Linux."
+                    " we hope you enjoy using Pisi Linux."
                     " The following links will guide you while"
-                    " using Pisi GNU/Linux. Please do not"
+                    " using Pisi Linux. Please do not"
                     " hesitate to inform about your experiences,"
                     " suggestions and errors you have encountered."))
 
@@ -137,7 +135,7 @@ class welcomeui(QWidget):
         self.wikiButton = QPushButton()
         self.wikiButton.setFixedWidth(160)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
-        self.wikiButton.setText(self.tr("Pisi GNU/Linux Wiki"))
+        self.wikiButton.setText(self.tr("Pisi Linux Wiki"))
         self.wikiButton.setIcon(QIcon(':/images/wikipedia-logo.svg'))
         self.wikiButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.wikiButton)
@@ -201,15 +199,15 @@ class welcomeui(QWidget):
         self.joinUsButton.setFixedWidth(160)
         self.joinUsButton.setCursor(Qt.PointingHandCursor)
         self.joinUsButton.setText(self.tr("Join Us"))
-        self.joinUsButton.setIcon(QIcon(':/images/joinus.svg'))
+        self.joinUsButton.setIcon(QIcon(':/images/join_us.svg'))
         self.joinUsButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.joinUsButton)
 
         self.donateButton = QPushButton()
         self.donateButton.setFixedWidth(160)
         self.donateButton.setCursor(Qt.PointingHandCursor)
-        self.donateButton.setText(self.tr("Ev"))
-        self.donateButton.setIcon(QIcon(':/images/ev.svg'))
+        self.donateButton.setText(self.tr("Home"))
+        self.donateButton.setIcon(QIcon(':/images/home.svg'))
         self.donateButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.donateButton)
 
