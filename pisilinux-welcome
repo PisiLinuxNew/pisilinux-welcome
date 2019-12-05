@@ -38,7 +38,7 @@ def main():
 
     locale = QLocale.system().name()
     translator = QTranslator(app)
-    translator.load("/usr/share/welcome/languages/{}.qm".format(locale))
+    translator.load("/usr/share/pisilinux-welcome/languages/{}.qm".format(locale))
     app.installTranslator(translator)
 
     window = welcomeui()
