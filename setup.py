@@ -15,21 +15,23 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 
+import subprocess
+import os
 from setuptools import setup, find_packages
-from os import listdir, system
 
 langs = []
-for file in listdir("languages"):
-    if file.endswith("ts"):
-        system("lrelease languages/{}".format(file))
+for file in os.listdir("languages"):
+    if file.endswith(".ts"):
+        lang_file = "languages/{}".format(file)
+        subprocess.run(["lrelease", lang_file])
         langs.append(("languages/{}".format(file)).replace(".ts", ".qm"))
 
 release_notes = []
-for file in listdir("data/media-content/release-notes"):
+for file in os.listdir("data/media-content/release-notes"):
     if file.endswith(".html"):
-        langs.append(("data/media-content/release-notes/{}".format(file))
+        langs.append(("data/media-content/release-notes/{}".format(file)))
 
-system('pyrcc5 welcome.qrc -o welcome/resource.py')
+subprocess.run(["pyrcc5", "welcome.qrc", "-o", "welcome/resource.py"])
 
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
