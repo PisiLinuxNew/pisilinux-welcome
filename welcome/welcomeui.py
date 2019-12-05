@@ -201,7 +201,7 @@ class welcomeui(QWidget):
         self.joinUsButton.setFixedWidth(160)
         self.joinUsButton.setCursor(Qt.PointingHandCursor)
         self.joinUsButton.setText(self.tr("Join Us"))
-        self.joinUsButton.setIcon(QIcon(':/images/joinus.svg'))
+        self.joinUsButton.setIcon(QIcon(':/images/join_us.svg'))
         self.joinUsButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.joinUsButton)
 
@@ -209,7 +209,7 @@ class welcomeui(QWidget):
         self.donateButton.setFixedWidth(160)
         self.donateButton.setCursor(Qt.PointingHandCursor)
         self.donateButton.setText(self.tr("Ev"))
-        self.donateButton.setIcon(QIcon(':/images/ev.svg'))
+        self.donateButton.setIcon(QIcon(':/images/home.svg'))
         self.donateButton.setIconSize(QSize(32, 32))
         vlayoutIII.addWidget(self.donateButton)
 

@@ -10,16 +10,16 @@
         <file>images/github-logo.svg</file>
         <file>images/google-plus.svg</file>
         <file>images/guide.svg</file>
+        <file>images/home.svg</file>
         <file>images/info.svg</file>
         <file>images/instagram.svg</file>
-        <file>images/joinus.svg</file>
+        <file>images/join_us.svg</file>
         <file>images/kaptan.svg</file>
         <file>images/pisilinux-welcome.svg</file>
         <file>images/pisi-text.png</file>
         <file>images/pisi-white.svg</file>
         <file>images/Slack.png</file>
         <file>images/twitter.svg</file>
-        <file>images/ev.svg</file>
         <file>images/wikipedia-logo.svg</file>
     </qresource>
 </RCC>
