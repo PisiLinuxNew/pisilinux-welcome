@@ -1,5 +1,5 @@
 # Pisi Linux Welcome Application
-A welcome application that meets the user on Live CD mode or after installation in Pisi Linux. It has been written with Python 3.x and PyQt 5.x.
+A welcome application that meets the user on Live CD mode and after installation in Pisi Linux. It has been written with Python 3.x and PyQt 5.x.
 
 ## Installation and running
 After downloading or cloning this repository, open a terminal in directory that this repository has been downloaded or cloned into and run that command for installation:
