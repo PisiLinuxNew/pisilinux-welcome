@@ -19,6 +19,7 @@
 import os
 import shutil
 import webbrowser
+import locale
 
 from PyQt5.QtCore import Qt, QSysInfo, QSize, QProcess
 from PyQt5.QtGui import QIcon, QPixmap
@@ -374,7 +375,12 @@ class welcomeui(QWidget):
         self.open_url("https://pisilinux.org/wiki/cont/53-pisi-linux-kurulum.html")
 
     def releaseNotes(self):
-        self.open_url("/usr/share/welcome/data/media-content/index.html")
+        if locale.getlocale()[0][:2] == "en":
+            self.open_url("/usr/share/pisilinux-welcome/data/release-notes/release-notes-en.html")
+        elif locale.getlocale()[0][:2] == "tr":
+            self.open_url("/usr/share/pisilinux-welcome/data/release-notes/release-notes-tr.html")
+        else:
+            self.open_url("/usr/share/pisilinux-welcome/data/release-notes/release-notes-en.html")
 
     def wikiPage(self):
         self.open_url("https://pisilinux.org/wiki")
