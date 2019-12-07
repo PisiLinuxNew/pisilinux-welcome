@@ -20,25 +20,25 @@ import os
 from setuptools import setup, find_packages
 
 langs = []
-for file in os.listdir("languages"):
-    if file.endswith(".ts"):
-        lang_file = "languages/{}".format(file)
+for f in os.listdir("languages"):
+    if f.endswith(".ts"):
+        lang_file = "languages/{}".format(f)
         subprocess.run(["lrelease", lang_file])
-        langs.append(("languages/{}".format(file)).replace(".ts", ".qm"))
+        langs.append(("languages/{}".format(f)).replace(".ts", ".qm"))
 
 release_notes = []
-for file in os.listdir("data/media-content/release-notes"):
-    if file.endswith(".html"):
-        langs.append(("data/media-content/release-notes/{}".format(file)))
+for f in os.listdir("data/release-notes"):
+    release_notes.append(("data/release-notes/{}".format(f)))
 
 subprocess.run(["pyrcc5", "welcome.qrc", "-o", "welcome/resource.py"])
+
+print(release_notes)
+print(langs)
 
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
          ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
-         ('/usr/share/pisilinux-welcome/data/media-content', ["data/media-content/logo.png"]),
-         ('/usr/share/pisilinux-welcome/data/media-content', ["data/media-content/index.html"]),
-         ('/usr/share/pisilinux-welcome/data/media-content/release-notes', release_notes),
+         ('/usr/share/pisilinux-welcome/data/release-notes', release_notes),
          ('/usr/share/pisilinux-welcome/languages', langs)]
 
 setup(
