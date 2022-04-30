@@ -45,12 +45,12 @@ setup(
     name="pisilinux-welcome",
     scripts=["pisilinux-welcome"],
     packages=find_packages(),
-    version="1.0",
+    version="1.8",
     license="GPLv3",
     description="Pisi Linux Welcome Application",
     author="Metehan Özbek",
     author_email="mthnzbk@gmail.com",
     url="https://github.com/PisiLinuxNew/pisilinux-welcome",
-    keywords=["PyQt5"],
+    keywords=["Pisi", "Linux", "Welcome", "PyQt5"],
     data_files=datas
 )
