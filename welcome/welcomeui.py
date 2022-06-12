@@ -276,22 +276,6 @@ class welcomeui(QWidget):
         self.githubButton.setToolTip(self.tr("Pisi Linux Repositories GitHub Page"))
         self.footerWidget.layout().addWidget(self.githubButton)
 
-        self.github2Button = QPushButton()
-        self.github2Button.setFixedSize(36, 36)
-        self.github2Button.setIconSize(QSize(36, 36))
-        self.github2Button.setIcon(QIcon(':/images/github-logo.svg'))
-        self.github2Button.setCursor(Qt.PointingHandCursor)
-        self.github2Button.setToolTip(self.tr("Pisi Linux New GitHub Page"))
-        self.footerWidget.layout().addWidget(self.github2Button)
-
-        self.github3Button = QPushButton()
-        self.github3Button.setFixedSize(36, 36)
-        self.github3Button.setIconSize(QSize(36, 36))
-        self.github3Button.setIcon(QIcon(':/images/github-logo.svg'))
-        self.github3Button.setCursor(Qt.PointingHandCursor)
-        self.github3Button.setToolTip(self.tr("forYali GitHub Page"))
-        self.footerWidget.layout().addWidget(self.github3Button)
-
         self.footerWidget.layout().addItem(
             QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
 
@@ -313,8 +297,6 @@ class welcomeui(QWidget):
         self.instagramButton.clicked.connect(self.instagramPage)
         self.youtubeButton.clicked.connect(self.youtubePage)
         self.githubButton.clicked.connect(self.githubPage)
-        self.github2Button.clicked.connect(self.github2Page)
-        self.github3Button.clicked.connect(self.github3Page)
 
         self.releaseNotesButton.clicked.connect(self.releaseNotes)
         self.wikiButton.clicked.connect(self.wikiPage)
@@ -364,12 +346,6 @@ class welcomeui(QWidget):
 
     def githubPage(self):
         self.open_url("https://github.com/pisilinux")
-
-    def github2Page(self):
-        self.open_url("https://github.com/PisiLinuxNew")
-
-    def github3Page(self):
-        self.open_url("https://github.com/forYali")
 
     def installationDocument(self):
         self.open_url("https://pisilinux.org/wiki/cont/53-pisi-linux-kurulum.html")
